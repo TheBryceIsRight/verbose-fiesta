@@ -1,19 +1,39 @@
 ---
 title: 'AllVoices'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
+excerpt: 'Helping employees speak out in the workplace.'
+coverImage: '/assets/blog/allvoices/allvoices.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
-  name: JJ Kasper
+  name: Bryce Watson
   picture: '/assets/blog/authors/jj.jpeg'
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: '/assets/blog/allvoices/allvoices.png'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+## How do we give employees a platform to make their voice heard in the workplace?
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+Everyone deserves a voice in workplace culture reform. As the head of product design at AllVoices I help employees find a space to better communicate with their leadership teams.
 
-## Lorem Ipsum
+## Goals
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+### Employees First
+
+Our platform provides a space to provide feedback but also serious concerns that may be criminal in nature. Retaliation is unfortunately common, and software like AllVoices helps create a paper trail that keeps bad actors accountable for their behavior. 
+
+### Consistency is key
+
+One of my first initiatives upon entering this role was to standardize all major UI components in a design system. This system would go on to include code snippets for better developer handoff, entire flows for Sales demos, and all photography and graphics for Marketing’s use.  
+
+### Multi-dimensional impact
+
+At AllVoices I began to offer a broader set skills than I had performed in the past and got 3D animation in Blender, 2D animation in After Effects, and graphical illustration approved for marketing use. I also helped out with full-stack development in Node.js to make the company’s Slack integration. 
+
+## Takeaways
+
+### Employees in crisis often have no options except to quit. We provide an alternative.
+
+Anonymous reporting isn’t a dirty word, it allows employees to be honest. When the conversations happen that define the company culture, it’s vitally important that the topics are about things that the employees actually care about. If you’re not getting honest feedback, your feedback is not very useful.
+
+### Letting an employee go is never easy. An accurate record of behavior forces the change that need to happen.
+
+No one ever wants to let someone go for behavior problems. We want to believe that people will understand the way they affect people and work on themselves, but some never do. We track every single change to a case with a permanent, unchangeable activity log. We keep bad actors accountable, so when the time comes the paperwork trail is immaculate.
