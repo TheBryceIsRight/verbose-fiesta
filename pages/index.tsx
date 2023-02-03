@@ -19,7 +19,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Bryce Watson&#39;s Design Portfolio</title>
+          <title>{"Bryce Watson's Design Portfolio"}</title>
         </Head>
         <Container>
           <Intro />
