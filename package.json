@@ -1,5 +1,6 @@
 {
   "private": true,
+  "author": "Bryce Watson",
   "scripts": {
     "dev": "next",
     "build": "next build",
