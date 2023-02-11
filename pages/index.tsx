@@ -21,8 +21,9 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <title>{"Bryce Watson's Design Portfolio"}</title>
         </Head>
+        <br/>
+        <br/>
         <Container>
-          <Intro />
           {heroPost && (
             <HeroPost
               title={heroPost.title}

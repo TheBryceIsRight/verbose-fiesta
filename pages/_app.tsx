@@ -1,9 +1,19 @@
 import { AppProps } from 'next/app'
 import '../styles/index.css'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Header from '../components/header';
+import { green, purple } from '@mui/material/colors';
 
 
-const theme = createTheme({
+export const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#fff',
+    },
+    secondary: {
+      main: '#16274C',
+    },
+  },
   typography: {
     fontFamily: [
       '-apple-system',
@@ -21,5 +31,8 @@ const theme = createTheme({
 });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  return <ThemeProvider theme={theme}><Component {...pageProps} /></ThemeProvider>
+  return <ThemeProvider theme={theme}>
+    <Header/>
+    <Component {...pageProps} />
+  </ThemeProvider>
 }
