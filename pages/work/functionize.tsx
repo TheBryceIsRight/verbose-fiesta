@@ -7,7 +7,7 @@ import site_map from '../../public/assets/blog/functionize/site_map.svg'
 import undraw_hero from '../../public/assets/blog/functionize/undraw_hero.svg'
 import design_system from '../../public/assets/blog/functionize/style_guide.svg'
 
-export default function AllVoices() {
+export default function Functionize() {
     return <MyContainer>
         <br />
         <br />
@@ -131,12 +131,6 @@ export default function AllVoices() {
             <Typography variant='body1'>No one ever wants to let someone go for behavior problems. We want to believe that people will understand the way they affect people and work on themselves, but some never do. We track every single change to a case with a permanent, unchangeable activity log. We keep bad actors accountable, so when the time comes the paperwork trail is immaculate.
             </Typography>
             <br />
-            <br />
-            <br />
-            <Typography variant='h6'>Letting an employee go is never easy. An accurate record of behavior forces the change that need to happen.</Typography>
-            <br />
-            <Typography variant='body1'>It&#39;s a ton of upfront work to create a design system. I used the atomic design pattern, where each piece of the UI is slowly built up in various levels of complexity - atoms, molecules, organisms, templates, and finally pages. And it takes forever. It&#39;s worth it though, as the amount of time I&#39;ve saved from having a bunch of standardized components is something I&#39;ll probably never be able to measure. Brand consistency benefits as the company grows, especially if you can turn it into data like a JSON response. I can make large scale changes across a huge site in minutes, something that&#39;d never be possible without a design system.
-            </Typography>
             <br />
             <br />
             <br />
