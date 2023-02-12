@@ -29,7 +29,7 @@ const Header = () => {
           <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} color="secondary">
             Bryce's Portfolio
           </Typography>
-          <Link href="/work/functionize">
+          <Link href="/work/elavon-status">
             <IconButton
               size="large"
               edge="start"
