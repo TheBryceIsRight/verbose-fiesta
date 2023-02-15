@@ -1,6 +1,6 @@
 ---
 title: 'About Me'
-excerpt: 'Introduction'
+excerpt: ''
 coverImage: '/assets/blog/aboutme/coffee.png'
 date: '2020-03-16T05:35:07.322Z'
 author:

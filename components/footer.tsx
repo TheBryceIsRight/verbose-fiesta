@@ -1,21 +1,32 @@
 import Container from './container'
 import { EXAMPLE_PATH } from '../lib/constants'
+import { Button, Typography } from '@mui/material'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <footer className="bg-neutral-50 border-t border-neutral-200">
       <Container>
         <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-[2.5rem] font-regular tracking-regular leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Bryce Watson&#39;s Design Portfolio
-          </h3>
+          <Typography variant="h4">Bryce Watson&#39;s Design Portfolio</Typography>
+          <br/>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://github.com/TheBryceIsRight/phoenix"
-              className="mx-3 font-medium hover:underline"
-            >
-              View on GitHub
-            </a>
+            <Link href="https://github.com/TheBryceIsRight/phoenix" target="_blank">
+              <Button
+                size="large"
+                color="secondary"
+                aria-label="View the code on GitHub"
+                sx={{ mr: 2 }}
+                startIcon={<GitHubIcon />}
+              >
+                View the code on GitHub
+              </Button>
+            </Link>
+          </div>
+          <br/>
+          <div>
+          <Typography variant="caption">© {new Date().getFullYear()} · Bryce Watson · All Rights Reserved </Typography>
           </div>
         </div>
       </Container>

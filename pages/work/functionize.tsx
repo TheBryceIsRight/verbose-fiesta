@@ -6,9 +6,15 @@ import Image from 'next/image'
 import site_map from '../../public/assets/blog/functionize/site_map.svg'
 import undraw_hero from '../../public/assets/blog/functionize/undraw_hero.svg'
 import design_system from '../../public/assets/blog/functionize/style_guide.svg'
+import Head from 'next/head'
+
 
 export default function Functionize() {
     return <MyContainer>
+        <Head>
+            <title>Functionize</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <br />
         <br />
         <br />

@@ -6,9 +6,14 @@ import Image from 'next/image'
 import site_map from '../../public/assets/blog/allvoices/av_sitemap.svg'
 import undraw_hero from '../../public/assets/blog/allvoices/undraw_hero.svg'
 import design_system from '../../public/assets/blog/allvoices/av_design_system.svg'
+import Head from 'next/head'
 
 export default function AllVoices() {
     return <MyContainer>
+        <Head>
+            <title>AllVoices</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <br />
         <br />
         <br />
@@ -69,6 +74,7 @@ export default function AllVoices() {
             <br />
             <br />
             <br />
+            <br />
             <Typography variant='h4'>Information Architecture</Typography>
             <br />
             <Image
@@ -77,6 +83,8 @@ export default function AllVoices() {
                 width={1000}
                 height={1000}
             />
+            <br />
+            <br />
             <br />
             <br />
             <Typography variant='h4'>Style Guide</Typography>
@@ -88,10 +96,16 @@ export default function AllVoices() {
                 height={1000}
             />
             <br />
+            <br />
+            <br />
             <Typography variant="h4">Messaging Templates</Typography>
             <br />
-            <iframe width="100%" height="650" title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkqYsCa4kp0k7QJLEdhTMhS%2FMessage-Templating%3Fpage-id%3D0%253A1%26node-id%3D247%253A13058%26viewport%3D-160%252C541%252C0.1%26scaling%3Dscale-down-width%26starting-point-node-id%3D247%253A13058" allowFullScreen={true}>
+            <br />
+            <iframe width="100%" height="700" title="Messaging Templatges prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkqYsCa4kp0k7QJLEdhTMhS%2FMessage-Templating%3Fpage-id%3D0%253A1%26node-id%3D247%253A13058%26viewport%3D-160%252C541%252C0.1%26scaling%3Dscale-down-width%26starting-point-node-id%3D247%253A13058" allowFullScreen={true}>
             </iframe>
+            <br />
+            <br />
+            <br />
             <br />
             <br />
             <Typography variant='h4'>3D Animation</Typography>
@@ -101,15 +115,9 @@ export default function AllVoices() {
             </iframe>
             <br />
             <br />
-            <Typography variant='h4'>How do we give employees a platform to make their voice heard in the workplace?
-            </Typography>
-            <br />
-            <Typography variant='body1'>Everyone deserves a voice in workplace culture reform. As the head of product design at AllVoices I help employees find a space to better communicate with their leadership teams. I report to Jeff Harris, VP of Product and work with Annie Meadows, Senior Product Owner, and Mateo Allen, Project Manager.
-            </Typography>
             <br />
             <br />
-            <br />
-            <Typography variant='h4'>Goals</Typography>
+            <Typography variant='h4'>Takeaways</Typography>
             <br />
             <br />
             <Typography variant='h6'>Employees in crisis often have no options except to quit. We provide an alternative.

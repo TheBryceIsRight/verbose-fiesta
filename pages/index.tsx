@@ -22,6 +22,8 @@ export default function Index({ allPosts }: Props) {
         </Head>
         <br/>
         <br/>
+        <br />
+        <br />
         <Container>
           {heroPost && (
             <HeroPost

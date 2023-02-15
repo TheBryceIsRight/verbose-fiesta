@@ -6,9 +6,14 @@ import Image from 'next/image'
 import site_map from '../../public/assets/blog/elavon/site_map_ss.svg'
 import undraw_hero from '../../public/assets/blog/elavon/undraw_hero_ss.svg'
 import style_light from '../../public/assets/blog/elavon/style_guide_ss.svg'
+import Head from 'next/head'
 
 export default function Systemstatus() {
     return <MyContainer>
+        <Head>
+            <title>Elavon - System Status</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <br />
         <br />
         <br />
@@ -55,6 +60,9 @@ export default function Systemstatus() {
             <Typography variant='body1'>This project was done with the help of Ariel Rodriguez, the only developer, and Craig Bruce, our product owner.
             </Typography>
             <br />
+            <br />
+            <br />
+            <br />
             <Typography variant='h4'>Goals</Typography>
             <br />
             <br />
@@ -95,6 +103,9 @@ export default function Systemstatus() {
                 width={1000}
                 height={1000}
             />
+            <br />
+            <br />
+            <br />
             <br />
             <Typography variant="h4">Mobile Prototype</Typography>
             <br />

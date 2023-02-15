@@ -1,0 +1,76 @@
+import SummaryCard from "../../components/summary-card"
+import MyContainer from "../../components/container"
+import { Container } from "@mui/material"
+import { Typography } from "@mui/material"
+import Image from 'next/image'
+import atlanta from '../../public/assets/blog/aboutme/ATL.svg'
+import coffee from '../../public/assets/blog/aboutme/coffee.png'
+import design_system from '../../public/assets/blog/allvoices/av_design_system.svg'
+import Head from 'next/head'
+
+
+export default function Aboutme() {
+    return <MyContainer>
+        <Head>
+            <title>About Me</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Typography variant='h3'>About Me</Typography>
+        <br />
+        <Typography variant='h5'>I'm a UX Designer living in Atlanta, Georgia. I love helping create intuitive, efficient, accessible experiences in consumer software though UX Design and Full Stack development.
+        </Typography>
+        <br />
+        <br />
+        <Container maxWidth="xl">
+            <br />
+            <br />
+            <br />
+            <Image
+                src={atlanta}
+                alt="Atlanta vectorized"
+                width={1000}
+                height={1000}
+                style={{ borderRadius: 6 }}
+            />
+            <br />
+            <Typography variant="body1">My hometown, drawn in Figma. 
+            </Typography>
+            <Typography variant="caption">© {new Date().getFullYear()} · Bryce Watson · All Rights Reserved </Typography>
+            <br />
+            <br />
+            <br />
+            <br />
+            <Image
+                src={coffee}
+                alt="Me serving coffee next to a Kyoto brewer"
+                width={1000}
+                height={1000}
+                style={{ borderRadius: 6 }}
+            />
+            <br />
+            <Typography variant="body1">Photo Credit Georgia Tech Institute Communications
+            </Typography>
+            <br />
+            <br />
+        </Container>
+        <Container maxWidth="lg">
+
+            <br />
+            <br />
+            <br />
+            <br />
+        </Container>
+        <br />
+        <br />
+        <br />
+        <br />
+    </MyContainer>
+}

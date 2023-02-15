@@ -1,11 +1,9 @@
 import { AppProps } from 'next/app'
 import '../styles/index.css'
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import Header from '../components/header';
-import { green, purple } from '@mui/material/colors';
 
-
-export const theme = createTheme({
+export let theme = createTheme({
   palette: {
     primary: {
       main: '#fff',
@@ -29,6 +27,8 @@ export const theme = createTheme({
     ].join(','),
   },
 });
+
+theme = responsiveFontSizes(theme)
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return <ThemeProvider theme={theme}>

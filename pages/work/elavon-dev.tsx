@@ -7,9 +7,14 @@ import site_map from '../../public/assets/blog/elavon/site_map.svg'
 import undraw_hero from '../../public/assets/blog/elavon/undraw_hero.svg'
 import style_light from '../../public/assets/blog/elavon/style_guide_light.svg'
 import style_dark from '../../public/assets/blog/elavon/style_guide_dark.svg'
+import Head from 'next/head'
 
 export default function Devportal() {
     return <MyContainer>
+        <Head>
+            <title>Elavon - Dev Portal</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <br />
         <br />
         <br />
@@ -99,11 +104,15 @@ export default function Devportal() {
                 height={1000}
             />
             <br />
+            <br />
+            <br />
+            <br />
             <Typography variant="h4">Mobile Prototype</Typography>
             <br />
             <br />
             <iframe width="100%" height="900" title="Figma prototype" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4Pydx6tuDUhxGqBaLvzKpO%2FPortfolio-(Copy)%3Fpage-id%3D33%253A2049%26node-id%3D33%253A2050%26viewport%3D1180%252C1331%252C0.45%26scaling%3Dscale-down%26starting-point-node-id%3D33%253A2050" allowFullScreen={true}>
             </iframe>
+            <br />
             <br />
             <br />
             <br />
