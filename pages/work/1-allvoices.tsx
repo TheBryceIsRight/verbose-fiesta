@@ -35,8 +35,6 @@ export default function AllVoices() {
             <Image
                 src={undraw_hero}
                 alt="Hero image for allvoices"
-                width={1000}
-                height={1000}
             />
             <br />
             <br />
@@ -81,8 +79,6 @@ export default function AllVoices() {
             <Image
                 src={site_map}
                 alt="AllVoices site map"
-                width={1000}
-                height={1000}
             />
             <br />
             <br />

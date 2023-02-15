@@ -84,8 +84,6 @@ export default function Functionize() {
             <Image
                 src={site_map}
                 alt="AllVoices site map"
-                width={1000}
-                height={1000}
             />
             <br />
             <br />
@@ -94,8 +92,6 @@ export default function Functionize() {
             <Image
                 src={design_system}
                 alt="AllVoices site map"
-                width={1000}
-                height={1000}
             />
             <br />
             <Typography variant="h4">Flow Prototype</Typography>

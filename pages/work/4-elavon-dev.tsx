@@ -89,15 +89,11 @@ export default function Devportal() {
             <Image
                 src={style_light}
                 alt="Elavon style guide for light mode"
-                width={1000}
-                height={1000}
             />
             <br />
             <Image
                 src={style_dark}
                 alt="Elavon style guide for dark mode"
-                width={1000}
-                height={1000}
             />
             <br />
             <br />

@@ -8,18 +8,14 @@ import { Typography } from '@mui/material'
 type Props = {
   title: string
   coverImage: string
-  date: string
   excerpt: string
-  author: Author
   slug: string
 }
 
 const HeroPost = ({
   title,
   coverImage,
-  date,
   excerpt,
-  author,
   slug,
 }: Props) => {
   return (

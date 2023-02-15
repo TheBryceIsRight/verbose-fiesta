@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200">
       <Container>
         <div className="py-28 flex flex-col lg:flex-row items-center">
           <Typography variant="h4">Bryce Watson&#39;s Design Portfolio</Typography>
@@ -30,7 +29,6 @@ const Footer = () => {
           </div>
         </div>
       </Container>
-    </footer>
   )
 }
 

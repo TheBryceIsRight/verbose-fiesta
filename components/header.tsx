@@ -10,8 +10,13 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { InsertDriveFile } from '@mui/icons-material';
 import Tooltip from '@mui/material/Tooltip';
+import { DarkMode } from '@mui/icons-material';
+import { useContext } from 'react';
+import { ColorModeContext } from '../pages/_app';
 
 const Header = () => {
+  const colorMode = useContext(ColorModeContext);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" elevation={0} color="primary">
@@ -29,9 +34,21 @@ const Header = () => {
               </IconButton>
             </Tooltip>
           </Link>
-          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} color="secondary">
-            UX Portfolio
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
+          Portfolio
           </Typography>
+          <Tooltip title="Dark Mode" arrow>
+              <IconButton
+                size="large"
+                edge="start"
+                color="secondary"
+                aria-label="menu"
+                sx={{ mr: 2 }}
+                onClick={colorMode.toggleColorMode}
+              >
+                <DarkMode />
+              </IconButton>
+            </Tooltip>
           <Link href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
             <Tooltip title="Resume" arrow>
               <IconButton

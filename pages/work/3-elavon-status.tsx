@@ -35,8 +35,8 @@ export default function Systemstatus() {
             <Image
                 src={undraw_hero}
                 alt="Hero image for functionize"
-                width={1000}
-                height={1000}
+                width={2000}
+                height={2000}
             />
             <br />
             <br />
@@ -96,8 +96,6 @@ export default function Systemstatus() {
             <Image
                 src={style_light}
                 alt="Elavon style guide for light mode"
-                width={1000}
-                height={1000}
             />
             <br />
             <br />
