@@ -8,6 +8,7 @@ import undraw_hero from '../../public/assets/blog/elavon/undraw_hero.svg'
 import style_light from '../../public/assets/blog/elavon/style_guide_light.svg'
 import style_dark from '../../public/assets/blog/elavon/style_guide_dark.svg'
 import Head from 'next/head'
+import ProtectedImage from "../../components/protected-image"
 
 export default function Devportal() {
     return <MyContainer>
@@ -80,12 +81,7 @@ export default function Devportal() {
             <br />
             <Typography variant='h4'>Information Architecture</Typography>
             <br />
-            <Image
-                src={site_map}
-                alt="AllVoices site map"
-                width={1000}
-                height={1000}
-            />
+            <ProtectedImage src={site_map} alt="Elavon dev site map"/>
             <br />
             <br />
             <Typography variant='h4'>Style Guide</Typography>

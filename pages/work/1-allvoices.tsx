@@ -7,6 +7,7 @@ import site_map from '../../public/assets/blog/allvoices/av_sitemap.svg'
 import undraw_hero from '../../public/assets/blog/allvoices/undraw_hero.svg'
 import design_system from '../../public/assets/blog/allvoices/av_design_system.svg'
 import Head from 'next/head'
+import ProtectedImage from "../../components/protected-image"
 
 export default function AllVoices() {
     return <MyContainer>
@@ -89,11 +90,9 @@ export default function AllVoices() {
             <br />
             <Typography variant='h4'>Style Guide</Typography>
             <br />
-            <Image
+            <ProtectedImage
                 src={design_system}
                 alt="AllVoices site map"
-                width={1000}
-                height={1000}
             />
             <br />
             <br />

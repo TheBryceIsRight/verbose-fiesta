@@ -33,7 +33,7 @@ export default function Aboutme() {
             <br />
             <br />
             <br />
-            <ProtectedImage image={atlanta} alt="Atlanta vectorized, drawn in Figma"/>
+            <ProtectedImage src={atlanta} alt="Atlanta vectorized, drawn in Figma"/>
             <br />
             <Typography variant="body1">My hometown, drawn in Figma. 
             </Typography>

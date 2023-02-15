@@ -7,6 +7,7 @@ import site_map from '../../public/assets/blog/functionize/site_map.svg'
 import undraw_hero from '../../public/assets/blog/functionize/undraw_hero.svg'
 import design_system from '../../public/assets/blog/functionize/style_guide.svg'
 import Head from 'next/head'
+import ProtectedImage from "../../components/protected-image"
 
 
 export default function Functionize() {
@@ -32,11 +33,9 @@ export default function Functionize() {
             <br />
             <br />
             <br />
-            <Image
+            <ProtectedImage
                 src={undraw_hero}
                 alt="Hero image for functionize"
-                width={1000}
-                height={1000}
             />
             <br />
             <br />

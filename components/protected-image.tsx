@@ -1,9 +1,8 @@
 import Image from "next/image"
 import atlanta from '../public/assets/blog/aboutme/ATL.svg'
 import React, { useState, useEffect } from 'react'
-import { Snackbar } from "@mui/material";
+import { Snackbar, AlertTitle } from "@mui/material";
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
-import { ReactNode } from 'react'
 
 
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
@@ -14,12 +13,12 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 });
 
 type Props = {
-    image: string
+    src: string
     alt: string
 }
 
 
-function ProtectedImage({ image, alt }: Props) {
+function ProtectedImage({ src, alt }: Props) {
     const [open, setOpen] = useState(false);
 
     const handleClick = () => {
@@ -44,11 +43,12 @@ function ProtectedImage({ image, alt }: Props) {
     return <div>
         <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
             <Alert onClose={handleClose} severity="warning" sx={{ width: '100%' }}>
-                These images are subject to copyright. Attemping to copy them will result in a copyright notice.
+            <AlertTitle>Warning</AlertTitle>
+                This content is subject to copyright. Attemping to copy it will result in a copyright notice.
             </Alert>
         </Snackbar>
         <Image
-            src={image}
+            src={src}
             alt={alt}
             width={1000}
             height={1000}

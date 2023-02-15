@@ -7,6 +7,7 @@ import site_map from '../../public/assets/blog/elavon/site_map_ss.svg'
 import undraw_hero from '../../public/assets/blog/elavon/undraw_hero_ss.svg'
 import style_light from '../../public/assets/blog/elavon/style_guide_ss.svg'
 import Head from 'next/head'
+import ProtectedImage from "../../components/protected-image"
 
 export default function Systemstatus() {
     return <MyContainer>
@@ -87,12 +88,7 @@ export default function Systemstatus() {
             <br />
             <Typography variant='h4'>Information Architecture</Typography>
             <br />
-            <Image
-                src={site_map}
-                alt="AllVoices site map"
-                width={1000}
-                height={1000}
-            />
+            <ProtectedImage src={site_map} alt="System status site map"/>
             <br />
             <br />
             <Typography variant='h4'>Style Guide</Typography>

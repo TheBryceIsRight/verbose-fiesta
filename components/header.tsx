@@ -30,9 +30,8 @@ const Header = () => {
             </Tooltip>
           </Link>
           <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} color="secondary">
-            Bryce's Portfolio
+            UX Portfolio
           </Typography>
-
           <Link href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
             <Tooltip title="Resume" arrow>
               <IconButton
