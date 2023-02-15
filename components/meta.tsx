@@ -34,7 +34,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta charSet="utf-8"></meta>
         <meta property="og:type" content="blog"></meta>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
         <meta property="twitter:image:alt" content="laptop with user interface and the AllVoices logo"></meta>
         <meta property="twitter:image" content="https://res.cloudinary.com/bryce-portfolio/image/upload/v1672785472/AllVoices_pyvu6b.png"></meta>

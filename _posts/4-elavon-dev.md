@@ -1,6 +1,6 @@
 ---
 title: 'Elavon - Developer Portal'
-excerpt: 'Helping developers understand credti card systems through good documentation'
+excerpt: 'Helping developers understand credit card systems through good documentation'
 coverImage: '/assets/blog/elavon/dev-portal.png'
 date: '2020-03-16T05:35:07.322Z'
 author:

@@ -5,8 +5,8 @@ import { Typography } from "@mui/material"
 import Image from 'next/image'
 import atlanta from '../../public/assets/blog/aboutme/ATL.svg'
 import coffee from '../../public/assets/blog/aboutme/coffee.png'
-import design_system from '../../public/assets/blog/allvoices/av_design_system.svg'
 import Head from 'next/head'
+import ProtectedImage from "../../components/protected-image"
 
 
 export default function Aboutme() {
@@ -33,13 +33,7 @@ export default function Aboutme() {
             <br />
             <br />
             <br />
-            <Image
-                src={atlanta}
-                alt="Atlanta vectorized"
-                width={1000}
-                height={1000}
-                style={{ borderRadius: 6 }}
-            />
+            <ProtectedImage image={atlanta} alt="Atlanta vectorized, drawn in Figma"/>
             <br />
             <Typography variant="body1">My hometown, drawn in Figma. 
             </Typography>
