@@ -18,7 +18,7 @@ export default function Index() {
         <Head>
           <title>{"Bryce Watson's Design Portfolio"}</title>
         </Head>
-        <MuiContainer style={{ textAlign: 'center', alignItems:'center' }} maxWidth="lg">
+        <MuiContainer style={{ textAlign: 'center', alignItems: 'center' }} maxWidth="lg">
           <br />
           <br />
           <br />
@@ -32,13 +32,11 @@ export default function Index() {
             </Grid>
             <Grid xs={8}>
               <Link href="mailto:brycewatson315@gmail.com" >
-                <Button color='secondary' variant='outlined' startIcon={<Mail/>}>
+                <Button color='secondary' variant='outlined' startIcon={<Mail />}>
                   brycewatson315@gmail.com
                 </Button>
               </Link></Grid>
           </Grid>
-
-
           <br />
           <br />
           <br />
