@@ -1,4 +1,4 @@
-# Bryce's UX Design Portfolio
+# Sandra's Design Portfolio
 
 ## Made using a statically generated blog example with Next.js, Markdown, and TypeScript
 
