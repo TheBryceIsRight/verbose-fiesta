@@ -45,8 +45,6 @@ export default function Aboutme() {
             <Image
                 src={coffee}
                 alt="Me serving coffee next to a Kyoto brewer"
-                width={1000}
-                height={1000}
                 style={{ borderRadius: 6 }}
             />
             <br />
