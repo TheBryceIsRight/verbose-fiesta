@@ -32,7 +32,7 @@ const HeroPost = ({
           <Typography variant='h4'>
           <Link
               as={`/work/${slug}`}
-              href="/posts/[slug]"
+              href="/work/[slug]"
               className="hover:underline"
             >
               {title}
