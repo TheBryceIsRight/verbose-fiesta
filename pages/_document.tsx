@@ -26,7 +26,7 @@ export default function Document() {
     <meta property="og:site_name" content="Bryce Watson's Design Portfolio"></meta>
     <meta property="og:image:height" content="1024"></meta>
     <meta property="article:author" content="Bryce Watson"></meta>
-    <meta property="og:url" content="https://bryce-watson-design.onrender.com/"></meta>
+    <meta property="og:url" content="https://bryce-watson-design.vercel.app/"></meta>
   </head>
       <body>
         <Main />
