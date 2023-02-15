@@ -1,8 +1,5 @@
-import Avatar from './avatar'
-import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
-import type Author from '../interfaces/author'
 import { Typography } from '@mui/material'
 
 type Props = {
@@ -24,15 +21,9 @@ const PostPreview = ({
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
       <Typography variant='h4'>
-        <Link
-          as={`/work/${slug}`}
-          href="/work/[slug]"
-          className="hover:underline"
-        >
-          {title}
-        </Link>
+        {title}
       </Typography>
-      <br/>
+      <br />
       <Typography variant='body1'>{excerpt}</Typography>
     </div>
   )
