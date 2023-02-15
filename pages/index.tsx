@@ -43,7 +43,7 @@ export default function Index() {
         </MuiContainer>
         <Container>
           <section>
-            <Link href="/work/3-elavon-status">
+            <Link href="/work/1-allvoices">
               <ButtonBase style={{ alignContent: "start" }}>
                 <Container>
                   <CoverImage title="AllVoices" src="/assets/blog/allvoices/allvoices.png" slug="/work/1-allvoices" />
