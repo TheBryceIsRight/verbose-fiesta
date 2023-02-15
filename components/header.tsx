@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" elevation={0} color="primary">
+      <AppBar position="fixed" elevation={0} color="primary" enableColorOnDark>
         <Toolbar>
           <Link href="/">
             <Tooltip title="Home" arrow>

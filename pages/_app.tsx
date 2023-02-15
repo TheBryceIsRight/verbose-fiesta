@@ -20,14 +20,20 @@ const getDesignTokens = (mode: PaletteMode) => ({
         secondary: {
           main: '#16274C',
         },
+        background: {
+          default: '#fff',
+        },
       }
       : {
         // palette values for dark mode
         primary: {
-          main: '#16274C',
+          main: '#001137',
         },
         secondary: {
           main: '#fff',
+        },
+        background: {
+          default: '#001137',
         },
       }),
   },
