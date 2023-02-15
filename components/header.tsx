@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import HomeIcon from '@mui/icons-material/Home';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import PaletteIcon from '@mui/icons-material/Palette';
 import { InsertDriveFile } from '@mui/icons-material';
 import Tooltip from '@mui/material/Tooltip';
 import { DarkMode } from '@mui/icons-material';
@@ -35,21 +35,21 @@ const Header = () => {
             </Tooltip>
           </Link>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
-          Portfolio
+            Portfolio
           </Typography>
           <Tooltip title="Dark Mode" arrow>
-              <IconButton
-                size="large"
-                edge="start"
-                color="secondary"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-                onClick={colorMode.toggleColorMode}
-              >
-                <DarkMode />
-              </IconButton>
-            </Tooltip>
-          <Link href="https://docs.google.com/document/d/1TCrhwGzajWhGrd-bQxzjI-tcDvLy1tpXNn5qTyv886o/edit?usp=sharing" target="_blank">
+            <IconButton
+              size="large"
+              edge="start"
+              color="secondary"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+              onClick={colorMode.toggleColorMode}
+            >
+              <DarkMode />
+            </IconButton>
+          </Tooltip>
+          <Link href="https://docs.google.com/document/d/1C055L0uhJOlNPqIaOaA1ZBP4XYTQJNPCDOkXfJzlEFo/edit?usp=share_link" target="_blank">
             <Tooltip title="Resume" arrow>
               <IconButton
                 size="large"
@@ -62,7 +62,7 @@ const Header = () => {
               </IconButton>
             </Tooltip>
           </Link>
-          <Link href="https://www.linkedin.com/in/bryce-watson-gatech/" target="_blank">
+          <Link href="https://www.linkedin.com/in/sandrabenito/" target="_blank">
             <Tooltip title="LinkedIn" arrow>
               <IconButton
                 size="large"
@@ -75,8 +75,8 @@ const Header = () => {
               </IconButton>
             </Tooltip>
           </Link>
-          <Link href="https://github.com/TheBryceIsRight" target="_blank">
-            <Tooltip title="GitHub" arrow>
+          <Link href="https://www.behance.net/sbenito" target="_blank">
+            <Tooltip title="Behance" arrow>
               <IconButton
                 size="large"
                 edge="start"
@@ -84,7 +84,7 @@ const Header = () => {
                 aria-label="menu"
                 sx={{ mr: 2 }}
               >
-                <GitHubIcon />
+                <PaletteIcon/>
               </IconButton>
             </Tooltip>
           </Link>

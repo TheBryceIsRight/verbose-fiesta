@@ -16,24 +16,24 @@ export default function Index() {
     <>
       <Layout>
         <Head>
-          <title>{"Bryce Watson's Design Portfolio"}</title>
+          <title>{"Sandra's Design Portfolio"}</title>
         </Head>
         <MuiContainer style={{ textAlign: 'center', alignItems: 'center' }} maxWidth="lg">
           <br />
           <br />
           <br />
-          <Typography variant='h3'>Hi! I'm Bryce</Typography>
+          <Typography variant='h3'>Hi! I'm Sandra</Typography>
           <br />
-          <Typography variant='h5'>I design and build user-centered software, with a focus on accessibility.</Typography>
+          <Typography variant='h5'>I kick ass and take names, and I'm all out of names</Typography>
           <br />
           <Grid container spacing={2} alignItems='center' alignContent='center' maxWidth="lg" flexWrap="wrap" direction="column" >
             <Grid>
               <Typography variant='body1'>If you want to work with me I'm currently accepting freelance opportunities, so drop me a line at</Typography>
             </Grid>
             <Grid xs={8}>
-              <Link href="mailto:brycewatson315@gmail.com" >
+              <Link href="mailto:sbenitojunyent@gmail.com" >
                 <Button color='secondary' variant='outlined' startIcon={<Mail />}>
-                  brycewatson315@gmail.com
+                sbenitojunyent@gmail.com
                 </Button>
               </Link></Grid>
           </Grid>
@@ -49,10 +49,10 @@ export default function Index() {
                   <CoverImage title="AllVoices" src="/assets/blog/allvoices/allvoices.png" slug="/work/1-allvoices" />
                   <br />
                   <Typography variant='h4'>
-                    AllVoices
+                    Lorem Ipsum
                   </Typography>
                   <br />
-                  <Typography variant="body1">Helping employees speak out in the workplace.</Typography>
+                  <Typography variant="body1">Lorem ipsum dolor sit amet consectetur.</Typography>
                 </Container>
               </ButtonBase>
             </Link>
@@ -67,40 +67,40 @@ export default function Index() {
               <Link href="/work/2-functionize">
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
-                    title="Functionize"
+                    title="Lorem Ipsum"
                     coverImage='/assets/blog/functionize/functionize.png'
                     slug="2-functionize"
-                    excerpt='Helping testers with a low to no code AI-powered automation platform'
+                    excerpt='Lorem ipsum dolor sit amet consectetur.'
                   />
                 </ButtonBase>
               </Link>
               <Link href="/work/3-elavon-status">
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
-                    title="Elavon - System Status"
+                    title="Lorem Ipsum"
                     coverImage='/assets/blog/systemstatus/system-status.png'
                     slug="3-elavon-status"
-                    excerpt='Visualizing outages and downtime for transparency and compliance'
+                    excerpt='Lorem ipsum dolor sit amet consectetur.'
                   />
                 </ButtonBase>
               </Link>
               <Link href="/work/4-elavon-dev">
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
-                    title="Elavon - Developer Portal"
+                    title="Lorem Ipsum"
                     coverImage='/assets/blog/elavon/dev-portal.png'
                     slug="4-elavon-dev"
-                    excerpt='Helping developers understand credit card systems through good documentation'
+                    excerpt='Lorem ipsum dolor sit amet consectetur.'
                   />
                 </ButtonBase>
               </Link>
               <Link href="/work/5-me">
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
-                    title="About Me"
+                    title="Lorem Ipsum"
                     coverImage='/assets/blog/aboutme/coffee.png'
                     slug="5-me"
-                    excerpt=''
+                    excerpt='Lorem ipsum dolor sit amet consectetur.'
                   />
                 </ButtonBase>
               </Link>
