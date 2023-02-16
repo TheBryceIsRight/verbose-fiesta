@@ -5,6 +5,9 @@ import Header from '../components/header';
 import CssBaseline from '@mui/material/CssBaseline';
 import { PaletteMode } from '@mui/material';
 import { useState, useMemo, createContext, useContext } from 'react';
+import { AppPropsType } from 'next/dist/shared/lib/utils';
+import { LanguageProvider } from '../contexts/LanguageContext';
+
 
 export const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
@@ -54,7 +57,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
 });
 
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppPropsType) {
   let theme = useTheme();
   const colorContext = useContext(ColorModeContext);
   const [mode, setMode] = useState<PaletteMode>('light');
@@ -74,11 +77,13 @@ export default function App({ Component, pageProps }: AppProps) {
   theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
   theme = responsiveFontSizes(theme)
 
-  return <ColorModeContext.Provider value={colorMode}>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Header />
-      <Component {...pageProps} />
-    </ThemeProvider>
-  </ColorModeContext.Provider>
+  return <LanguageProvider>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Header />
+        <Component {...pageProps} key={router.route} />
+      </ThemeProvider>
+    </ColorModeContext.Provider>
+  </LanguageProvider>
 }

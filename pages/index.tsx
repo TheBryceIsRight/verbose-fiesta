@@ -10,8 +10,11 @@ import MuiContainer from '@mui/material/Container'
 import { Button } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
+import useTranslation from "../intl/useTranslation"
 
 export default function Index() {
+  const { t } = useTranslation()
+
   return (
     <>
       <Layout>
@@ -38,6 +41,10 @@ export default function Index() {
               </Link></Grid>
           </Grid>
           <br />
+          <br />
+          <br />
+          <Typography variant='h6'>Translation Testing</Typography>
+          <Typography variant='body1'>{t("slogan")}</Typography>
           <br />
           <br />
         </MuiContainer>
