@@ -43,10 +43,6 @@ export default function Index() {
           <br />
           <br />
           <br />
-          <Typography variant='h6'>Translation Testing</Typography>
-          <Typography variant='body1'>{t("slogan")}</Typography>
-          <br />
-          <br />
         </MuiContainer>
         <Container>
           <section>

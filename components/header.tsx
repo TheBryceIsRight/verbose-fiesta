@@ -81,7 +81,7 @@ const Header = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" elevation={0} color="primary" enableColorOnDark>
         <Toolbar>
-          <Tooltip title="Home" arrow>
+          <Tooltip title={t("home")} arrow>
             <IconButton
               size="large"
               edge="start"
@@ -115,7 +115,7 @@ const Header = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
             {t("portfolio")}
           </Typography>
-          <Tooltip title="Language" arrow>
+          <Tooltip title={t("language")} arrow>
             <IconButton
               size="large"
               edge="start"
@@ -127,7 +127,7 @@ const Header = () => {
               <Translate />
             </IconButton>
           </Tooltip>
-          <Tooltip title="Dark Mode" arrow>
+          <Tooltip title={t("dark_mode")} arrow>
             <IconButton
               size="large"
               edge="start"
@@ -139,7 +139,7 @@ const Header = () => {
               <DarkMode />
             </IconButton>
           </Tooltip>
-          <Tooltip title="More" arrow>
+          <Tooltip title={t("more")} arrow>
             <IconButton
               size="large"
               edge="start"
@@ -165,7 +165,7 @@ const Header = () => {
                 <ListItemIcon>
                   <InsertDriveFile fontSize="small" color="secondary" />
                 </ListItemIcon>
-                <ListItemText>Resume</ListItemText>
+                <ListItemText>{t("resume")}</ListItemText>
               </MenuItem>
             </Link>
             <Link href="https://www.behance.net/sbenito" target="_blank">
