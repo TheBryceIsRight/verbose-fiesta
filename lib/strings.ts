@@ -17,7 +17,7 @@ export const LangStrings = {
         slogan: "An example site showcasing a bilingual site with NextJS.",
     },
     es: {
-        hi: "¡Hola! Soy sandra",
+        hi: "¡Hola! Soy Sandra",
         kickass: "Pateo traseros y tomo nombres, y me quedo sin nombres",
         work_together: "Si quieres trabajar conmigo, actualmente estoy aceptando oportunidades independientes, así que envíame un mensaje a",
         portfolio: "Portafolio",
