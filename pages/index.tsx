@@ -25,13 +25,13 @@ export default function Index() {
           <br />
           <br />
           <br />
-          <Typography variant='h3'>Hi! I'm Sandra</Typography>
+          <Typography variant='h3'>{t("hi")}</Typography>
           <br />
-          <Typography variant='h5'>I kick ass and take names, and I'm all out of names</Typography>
+          <Typography variant='h5'>{t("kickass")}</Typography>
           <br />
           <Grid container spacing={2} alignItems='center' alignContent='center' maxWidth="lg" flexWrap="wrap" direction="column" >
             <Grid>
-              <Typography variant='body1'>If you want to work with me I'm currently accepting freelance opportunities, so drop me a line at</Typography>
+              <Typography variant='body1'>{t("work_together")}</Typography>
             </Grid>
             <Grid xs={8}>
               <Link href="mailto:sbenitojunyent@gmail.com" >
@@ -68,7 +68,7 @@ export default function Index() {
           <br />
           <br />
           <section>
-            <Typography variant='h3'>Previous Work</Typography>
+            <Typography variant='h3'>{t("previous_work")}</Typography>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
               <Link href="/work/2-functionize">

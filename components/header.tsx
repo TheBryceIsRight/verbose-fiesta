@@ -25,6 +25,8 @@ import { useRouter } from 'next/router';
 
 const Header = () => {
   const colorMode = useContext(ColorModeContext);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const { t } = useTranslation()
 
   //Translate Menu
   const [anchorElTranslate, setAnchorEltranslate] = useState<null | HTMLElement>(null);
@@ -59,7 +61,7 @@ const Header = () => {
     }
   }
 
-  function handleLocaleChange(language: string) {
+  function handleLocaleChange(language: string, index: number) {
     if (!window) {
       return;
     }
@@ -71,7 +73,7 @@ const Header = () => {
     if (!route.includes('post/')) {
       push(pathname, asPath.replace(regex, `/${language}`));
     }
-
+    setSelectedIndex(index);
     handleTranslationMenuClose()
   }
 
@@ -99,14 +101,19 @@ const Header = () => {
               'aria-labelledby': 'basic-button',
             }}
           >
-            {locales.map((locale) => (
-              <MenuItem key={locale} onClick={() => handleLocaleChange(locale)}>
+            {locales.map((locale, index) => (
+              <MenuItem 
+              key={locale}
+              disabled={index === selectedIndex}
+              onClick={() => handleLocaleChange(locale, index)}
+              selected={index === selectedIndex}
+              >
                 {convertLocale(locale)}
               </MenuItem>
             ))}
           </Menu>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
-            Portfolio
+            {t("portfolio")}
           </Typography>
           <Tooltip title="Language" arrow>
             <IconButton
