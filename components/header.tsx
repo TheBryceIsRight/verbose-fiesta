@@ -57,7 +57,7 @@ const Header = () => {
     } else if (locale === "es") {
       return "Español"
     } else if (locale === "ca") {
-      return "Catalán"
+      return "Català"
     }
   }
 
