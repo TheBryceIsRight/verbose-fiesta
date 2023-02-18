@@ -42,7 +42,6 @@ import Orgasms5 from '../../public/assets/royal-queen-seeds/Orgasms_5.png'
 import RoyalQueenSeedsLogo from '../../public/assets/royal-queen-seeds/RoyalQueenLogo.svg'
 
 
-
 import { IconButton } from "@mui/material"
 
 const emblaStyle = {
@@ -136,12 +135,17 @@ export default function RoyalQueenSeeds() {
             <br />
             <br />
             <br />
+            <br />
+            <br />
             <Image
                 src={RoyalQueenSeedsLogo}
                 alt="Logo for royal queen seeds"
                 width={745}
                 height={300}
+                loading="eager"
             />
+            <br />
+            <br />
             <br />
             <br />
             <br />
@@ -149,6 +153,7 @@ export default function RoyalQueenSeeds() {
             <Image
                 src={undraw_hero}
                 alt="Hero image for royal queen seeds"
+                loading="eager"
             />
         </Container>
         <Container maxWidth="sm">

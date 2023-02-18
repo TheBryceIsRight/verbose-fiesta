@@ -55,7 +55,8 @@ export default function Index() {
                   <Image
                     src={RQS}
                     alt='Cover Image for Royal Queen Seeds'
-                    
+                    placeholder='blur'
+                    loading='eager'
                     style={{ borderRadius: 8 }}
                   />                  <br />
                   <Typography variant='h4'>
@@ -70,11 +71,11 @@ export default function Index() {
           <br />
           <br />
           <br />
-          <section>
+          {/* <section>
             <Typography variant='h3'>{t("previous_work")}</Typography>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-              <Link href="/work/2-functionize">
+              <Link href="/work/functionize">
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
                     title="Lorem Ipsum"
@@ -84,7 +85,7 @@ export default function Index() {
                   />
                 </ButtonBase>
               </Link>
-              <Link href="/work/3-elavon-status">
+              <Link href="/work/elavon-status">
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
                     title="Lorem Ipsum"
@@ -94,7 +95,7 @@ export default function Index() {
                   />
                 </ButtonBase>
               </Link>
-              <Link href="/work/4-elavon-dev">
+              <Link href="/work/elavon-dev">
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
                     title="Lorem Ipsum"
@@ -104,7 +105,7 @@ export default function Index() {
                   />
                 </ButtonBase>
               </Link>
-              <Link href="/work/5-me">
+              <Link href="/work/me">
                 <ButtonBase style={{ textAlign: 'left' }}>
                   <PostPreview
                     title="Lorem Ipsum"
@@ -115,7 +116,7 @@ export default function Index() {
                 </ButtonBase>
               </Link>
             </div>
-          </section>
+          </section> */}
         </Container>
       </Layout>
     </>
