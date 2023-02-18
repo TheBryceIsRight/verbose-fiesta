@@ -1,10 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import useTranslation from '../intl/useTranslation';
 
 const bull = (
   <Box
@@ -16,6 +15,9 @@ const bull = (
 );
 
 export default function BasicCard(props) {
+
+  const { t } = useTranslation();
+
   const role = props.role
   const company = props.company
   const timeframe = props.timeframe
@@ -26,35 +28,35 @@ export default function BasicCard(props) {
     <Card sx={{ minWidth: 275, maxWidth: 400 }} variant="outlined">
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.primary" gutterBottom>
-          Role
+          {t("role")}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          {role}
+          {t(role)}
         </Typography>
-        <br/>
+        <br />
         <Typography sx={{ fontSize: 14 }} color="text.primary" gutterBottom>
-          Company
+          {t("company")}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {company}
         </Typography>
-        <br/>
+        <br />
         <Typography sx={{ fontSize: 14 }} color="text.primary" gutterBottom>
-          Time Frame
+          {t("time_frame")}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {timeframe}
         </Typography>
-        <br/>
+        <br />
         <Typography sx={{ fontSize: 14 }} color="text.primary" gutterBottom>
-          Team Style
+          {t("team_style")}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          {teamstyle}
+          {t(teamstyle)}
         </Typography>
-        <br/>
+        <br />
         <Typography sx={{ fontSize: 14 }} color="text.primary" gutterBottom>
-          Tools
+          {t("tools")}
         </Typography>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {tools}

@@ -6,10 +6,12 @@ import Image from 'next/image'
 import Head from 'next/head'
 import ProtectedImage from "../../components/protected-image"
 import useEmblaCarousel from 'embla-carousel-react'
-import { useCallback, useState } from "react"
+import { useCallback, useState, useContext } from "react"
+import { ColorModeContext } from '../../pages/_app';
 import { ChevronLeft, ChevronRight } from "@mui/icons-material"
 import Autoplay from 'embla-carousel-autoplay'
-import undraw_hero from '../../public/assets/royal-queen-seeds/RoyalQueenSeedsUndraw.svg'
+import undraw_hero_light from '../../public/assets/royal-queen-seeds/RoyalQueenSeedsUndrawLight.svg'
+import undraw_hero_dark from '../../public/assets/royal-queen-seeds/RoyalQueenSeedsUndrawDark.svg'
 import Influencer1 from '../../public/assets/royal-queen-seeds/Influencer_1.png'
 import Influencer2 from '../../public/assets/royal-queen-seeds/Influencer_2.png'
 import Influencer3 from '../../public/assets/royal-queen-seeds/Influencer_3.png'
@@ -44,9 +46,10 @@ import Insomnia2 from '../../public/assets/royal-queen-seeds/Insomnia_2.png'
 import Insomnia3 from '../../public/assets/royal-queen-seeds/Insomnia_3.png'
 import Insomnia4 from '../../public/assets/royal-queen-seeds/Insomnia_4.png'
 import Insomnia5 from '../../public/assets/royal-queen-seeds/Insomnia_5.png'
-import RoyalQueenSeedsLogo from '../../public/assets/royal-queen-seeds/RoyalQueenLogo.svg'
-
-
+import RoyalQueenSeedsLogoLight from '../../public/assets/royal-queen-seeds/RoyalQueenLogo-light.svg'
+import RoyalQueenSeedsLogoDark from '../../public/assets/royal-queen-seeds/RoyalQueenLogo-dark.svg'
+import { useTheme } from '@mui/material/styles';
+import useTranslation from "../../intl/useTranslation"
 
 import { IconButton } from "@mui/material"
 
@@ -71,6 +74,9 @@ const autoplayOptions = {
 
 export default function RoyalQueenSeeds() {
 
+    const theme = useTheme();
+    const { t } = useTranslation();
+
     // Carousel 1
     const [emblaRef1, emblaApi1] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
     const scrollPrev1 = useCallback(() => {
@@ -79,7 +85,6 @@ export default function RoyalQueenSeeds() {
     const scrollNext1 = useCallback(() => {
         if (emblaApi1) emblaApi1.scrollNext()
     }, [emblaApi1])
-
 
     // Carousel 2
     const [emblaRef2, emblaApi2] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
@@ -90,7 +95,6 @@ export default function RoyalQueenSeeds() {
         if (emblaApi2) emblaApi2.scrollNext()
     }, [emblaApi2])
 
-
     // Carousel 3
     const [emblaRef3, emblaApi3] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
     const scrollPrev3 = useCallback(() => {
@@ -99,7 +103,6 @@ export default function RoyalQueenSeeds() {
     const scrollNext3 = useCallback(() => {
         if (emblaApi3) emblaApi3.scrollNext()
     }, [emblaApi3])
-
 
     // Carousel 4
     const [emblaRef4, emblaApi4] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
@@ -132,10 +135,10 @@ export default function RoyalQueenSeeds() {
         <br />
         <Container maxWidth="md">
             <SummaryCard
-                role="Graphic Designer"
+                role="graphic_designer"
                 company="Royal Queen Seeds"
                 timeframe="TBD"
-                teamstyle="Solo Designer"
+                teamstyle="solo_designer"
                 tools="Adobe Creative Cloud - Illustrator, Photoshop, After Effects"
             >
             </SummaryCard>
@@ -144,24 +147,45 @@ export default function RoyalQueenSeeds() {
             <br />
             <br />
             <br />
-            <Image
-                src={RoyalQueenSeedsLogo}
-                alt="Logo for royal queen seeds"
-                width={745}
-                height={300}
-                loading="eager"
-            />
+            {theme.palette.mode === "light" ?
+                <Image
+                    src={RoyalQueenSeedsLogoLight}
+                    alt="Logo for royal queen seeds"
+                    width={745}
+                    height={300}
+                    loading="eager"
+                />
+                :
+                <Image
+                    src={RoyalQueenSeedsLogoDark}
+                    alt="Logo for royal queen seeds"
+                    width={745}
+                    height={300}
+                    loading="eager"
+                />
+            }
             <br />
             <br />
             <br />
             <br />
             <br />
-            <br />
-            <Image
-                src={undraw_hero}
-                alt="Hero image for royal queen seeds"
-                loading="eager"
-            />
+            {theme.palette.mode === "light" ?
+                <Image
+                    src={undraw_hero_light}
+                    alt="Logo for royal queen seeds"
+                    width={745}
+                    height={300}
+                    loading="eager"
+                />
+                :
+                <Image
+                    src={undraw_hero_dark}
+                    alt="Logo for royal queen seeds"
+                    width={745}
+                    height={300}
+                    loading="eager"
+                />
+            }
         </Container>
         <Container maxWidth="sm">
             <br />
@@ -169,7 +193,7 @@ export default function RoyalQueenSeeds() {
             <br />
             <br />
             <br />
-            <Typography variant='h4'>How to become a cannabis influencer</Typography>
+            <Typography variant='h4'>{t("cannabis_influencer")}</Typography>
             <br />
             <div style={emblaStyle} ref={emblaRef1}>
                 <div style={emblaContainerStyle}>
@@ -216,7 +240,7 @@ export default function RoyalQueenSeeds() {
             <br />
             <br />
             <br />
-            <Typography variant='h4'>Cannamyths: clearing up myths about cannabis</Typography>
+            <Typography variant='h4'>{t("cannamyths")}</Typography>
             <br />
             <div style={emblaStyle} ref={emblaRef2}>
                 <div style={emblaContainerStyle}>
@@ -304,7 +328,7 @@ export default function RoyalQueenSeeds() {
             </div>
             <br />
             <br />
-            <Typography variant='h4'>Attack of the munchies</Typography>
+            <Typography variant='h4'>{t("munchies_attack")}</Typography>
             <br />
             <div style={emblaStyle} ref={emblaRef3}>
                 <div style={emblaContainerStyle}>
@@ -392,7 +416,7 @@ export default function RoyalQueenSeeds() {
             </div>
             <br />
             <br />
-            <Typography variant='h4'>Cannabis and orgasms</Typography>
+            <Typography variant='h4'>{t("orgasms")}</Typography>
             <br />
             <div style={emblaStyle} ref={emblaRef4}>
                 <div style={emblaContainerStyle}>
@@ -443,11 +467,11 @@ export default function RoyalQueenSeeds() {
                     <ChevronRight />
                 </IconButton>
             </div>
-            <br/>
-            <br/>
             <br />
             <br />
-            <Typography variant='h4'>Cannabis and insomnia</Typography>
+            <br />
+            <br />
+            <Typography variant='h4'>{t("insomnia")}</Typography>
             <br />
             <div style={emblaStyle} ref={emblaRef5}>
                 <div style={emblaContainerStyle}>
@@ -506,7 +530,7 @@ export default function RoyalQueenSeeds() {
             <br />
             <br />
             <br />
-            <Typography variant='h3'>Thank you for reading!</Typography>
+            <Typography variant='h3'>{t("thanks_for_reading")}</Typography>
             <br />
             <br />
             <br />

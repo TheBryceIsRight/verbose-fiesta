@@ -1,22 +1,24 @@
 import Container from '../components/container'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
-import CoverImage from '../components/cover-image'
 import Link from 'next/link'
 import { ButtonBase, Typography } from '@mui/material'
-import PostPreview from '../components/post-preview'
 import MuiContainer from '@mui/material/Container'
 import { Button } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
 import useTranslation from "../intl/useTranslation"
 import RQS from "../public/assets/royal-queen-seeds/RQS.png"
-import cn from 'classnames'
 import Image from 'next/image'
+import { useTheme } from '@mui/material/styles';
+import ConstructionLight from "../public/assets/landing/under_construction_light.svg"
+import ConstructionDark from "../public/assets/landing/under_construction_dark.svg"
+import RQSLight from "../public/assets/landing/RQS_light.png"
+import RQSDark from "../public/assets/landing/RQS_dark.png"
 
 export default function Index() {
   const { t } = useTranslation()
+  const theme = useTheme();
 
   return (
     <>
@@ -47,30 +49,66 @@ export default function Index() {
           <br />
           <br />
         </MuiContainer>
-        <Container>
-          <section>
+        <MuiContainer maxWidth="md" style={{ alignContent: "center", alignItems: "center", textAlign: "center" }}>
             <Link href="/work/royal-queen-seeds">
-              <ButtonBase style={{ alignContent: "start" }}>
-                <Container>
-                  <Image
-                    src={RQS}
-                    alt='Cover Image for Royal Queen Seeds'
-                    placeholder='blur'
-                    loading='eager'
-                    style={{ borderRadius: 8 }}
-                  />                  <br />
+              <ButtonBase >
+                <MuiContainer maxWidth="md">
+                    {theme.palette.mode === "light" ?
+                      <Image
+                        src={RQSLight}
+                        alt="Royal Queen Seeds"
+                        width={745}
+                        height={300}
+                        loading="eager"
+                      />
+                      :
+                      <Image
+                        src={RQSDark}
+                        alt="Royal Queen Seeds"
+                        width={745}
+                        height={300}
+                        loading="eager"
+                      />
+                    }
+                    <br />
                   <Typography variant='h4'>
                     Royal Queen Seeds
                   </Typography>
                   <br />
                   {/* <Typography variant="body1">Lorem ipsum dolor sit amet consectetur.</Typography> */}
-                </Container>
+                </MuiContainer>
               </ButtonBase>
             </Link>
-          </section>
           <br />
           <br />
           <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <MuiContainer maxWidth="sm" style={{ alignItems: "center", textAlign: "center" }}>
+            {theme.palette.mode === "light" ?
+              <Image
+                src={ConstructionLight}
+                alt="Under construction"
+                width={745}
+                height={300}
+                loading="eager"
+              />
+              :
+              <Image
+                src={ConstructionDark}
+                alt="Under construction"
+                width={745}
+                height={300}
+                loading="eager"
+              />
+            }
+            <br />
+            <Typography variant='body1'>
+              {t("construction")}
+            </Typography>
+          </MuiContainer>
           {/* <section>
             <Typography variant='h3'>{t("previous_work")}</Typography>
             <br />
@@ -117,23 +155,8 @@ export default function Index() {
               </Link>
             </div>
           </section> */}
-        </Container>
+        </MuiContainer>
       </Layout>
     </>
   )
-}
-
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
-
-  return {
-    props: { allPosts },
-  }
 }

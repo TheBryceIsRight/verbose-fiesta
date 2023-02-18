@@ -1,6 +1,5 @@
-import { AppProps } from 'next/app'
 import '../styles/index.css'
-import { ThemeProvider, createTheme, responsiveFontSizes, useTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, responsiveFontSizes, useTheme, PaletteLinearProgress } from '@mui/material/styles';
 import Header from '../components/header';
 import CssBaseline from '@mui/material/CssBaseline';
 import { PaletteMode } from '@mui/material';
@@ -8,8 +7,9 @@ import { useState, useMemo, createContext, useContext } from 'react';
 import { AppPropsType } from 'next/dist/shared/lib/utils';
 import { LanguageProvider } from '../contexts/LanguageContext';
 
-
-export const ColorModeContext = createContext({ toggleColorMode: () => { } });
+export const ColorModeContext = createContext({
+  toggleColorMode: () => { },
+});
 
 const getDesignTokens = (mode: PaletteMode) => ({
   palette: {
@@ -63,6 +63,13 @@ export default function App({ Component, pageProps, router }: AppPropsType) {
   const [mode, setMode] = useState<PaletteMode>('light');
   const colorMode = useMemo(
     () => ({
+      getColorMode: () => {
+          if (mode === 'light') {
+            return 'light'
+          } else {
+            return 'dark'
+          }
+      },
       // The dark mode switch would invoke this method
       toggleColorMode: () => {
         setMode((prevMode: PaletteMode) =>
