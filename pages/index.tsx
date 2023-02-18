@@ -11,6 +11,9 @@ import { Button } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
 import useTranslation from "../intl/useTranslation"
+import RQS from "../public/assets/royal-queen-seeds/RQS.png"
+import cn from 'classnames'
+import Image from 'next/image'
 
 export default function Index() {
   const { t } = useTranslation()
@@ -36,7 +39,7 @@ export default function Index() {
             <Grid xs={8}>
               <Link href="mailto:sbenitojunyent@gmail.com" >
                 <Button color='secondary' variant='outlined' startIcon={<Mail />}>
-                sbenitojunyent@gmail.com
+                  sbenitojunyent@gmail.com
                 </Button>
               </Link></Grid>
           </Grid>
@@ -49,8 +52,12 @@ export default function Index() {
             <Link href="/work/royal-queen-seeds">
               <ButtonBase style={{ alignContent: "start" }}>
                 <Container>
-                  <CoverImage title="Royal Queen Seeds" src="/assets/royal-queen-seeds/RQS.png" slug="royal-queen-seeds" />
-                  <br />
+                  <Image
+                    src={RQS}
+                    alt='Cover Image for Royal Queen Seeds'
+                    
+                    style={{ borderRadius: 8 }}
+                  />                  <br />
                   <Typography variant='h4'>
                     Royal Queen Seeds
                   </Typography>
