@@ -81,17 +81,19 @@ const Header = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" elevation={0} color="primary" enableColorOnDark>
         <Toolbar>
-          <Tooltip title={t("home")} arrow>
-            <IconButton
-              size="large"
-              edge="start"
-              color="secondary"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            >
-              <HomeIcon />
-            </IconButton>
-          </Tooltip>
+          <Link href="/">
+            <Tooltip title={t("home")} arrow>
+              <IconButton
+                size="large"
+                edge="start"
+                color="secondary"
+                aria-label="menu"
+                sx={{ mr: 2 }}
+              >
+                <HomeIcon />
+              </IconButton>
+            </Tooltip>
+          </Link>
           <Menu
             id="basic-menu"
             anchorEl={anchorElTranslate}
@@ -102,11 +104,11 @@ const Header = () => {
             }}
           >
             {locales.map((locale, index) => (
-              <MenuItem 
-              key={locale}
-              disabled={index === selectedIndex}
-              onClick={() => handleLocaleChange(locale, index)}
-              selected={index === selectedIndex}
+              <MenuItem
+                key={locale}
+                disabled={index === selectedIndex}
+                onClick={() => handleLocaleChange(locale, index)}
+                selected={index === selectedIndex}
               >
                 {convertLocale(locale)}
               </MenuItem>

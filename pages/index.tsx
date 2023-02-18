@@ -46,16 +46,16 @@ export default function Index() {
         </MuiContainer>
         <Container>
           <section>
-            <Link href="/work/1-allvoices">
+            <Link href="/work/royal-queen-seeds">
               <ButtonBase style={{ alignContent: "start" }}>
                 <Container>
-                  <CoverImage title="AllVoices" src="/assets/blog/allvoices/allvoices.png" slug="/work/1-allvoices" />
+                  <CoverImage title="Royal Queen Seeds" src="/assets/royal-queen-seeds/RQS.png" slug="royal-queen-seeds" />
                   <br />
                   <Typography variant='h4'>
-                    Lorem Ipsum
+                    Royal Queen Seeds
                   </Typography>
                   <br />
-                  <Typography variant="body1">Lorem ipsum dolor sit amet consectetur.</Typography>
+                  {/* <Typography variant="body1">Lorem ipsum dolor sit amet consectetur.</Typography> */}
                 </Container>
               </ButtonBase>
             </Link>
