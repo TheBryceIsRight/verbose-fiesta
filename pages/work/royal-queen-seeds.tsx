@@ -39,7 +39,13 @@ import Orgasms2 from '../../public/assets/royal-queen-seeds/Orgasms_2.png'
 import Orgasms3 from '../../public/assets/royal-queen-seeds/Orgasms_3.png'
 import Orgasms4 from '../../public/assets/royal-queen-seeds/Orgasms_4.png'
 import Orgasms5 from '../../public/assets/royal-queen-seeds/Orgasms_5.png'
+import Insomnia1 from '../../public/assets/royal-queen-seeds/Insomnia_1.png'
+import Insomnia2 from '../../public/assets/royal-queen-seeds/Insomnia_2.png'
+import Insomnia3 from '../../public/assets/royal-queen-seeds/Insomnia_3.png'
+import Insomnia4 from '../../public/assets/royal-queen-seeds/Insomnia_4.png'
+import Insomnia5 from '../../public/assets/royal-queen-seeds/Insomnia_5.png'
 import RoyalQueenSeedsLogo from '../../public/assets/royal-queen-seeds/RoyalQueenLogo.svg'
+
 
 
 import { IconButton } from "@mui/material"
@@ -67,11 +73,9 @@ export default function RoyalQueenSeeds() {
 
     // Carousel 1
     const [emblaRef1, emblaApi1] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
-
     const scrollPrev1 = useCallback(() => {
         if (emblaApi1) emblaApi1.scrollPrev()
     }, [emblaApi1])
-
     const scrollNext1 = useCallback(() => {
         if (emblaApi1) emblaApi1.scrollNext()
     }, [emblaApi1])
@@ -79,11 +83,9 @@ export default function RoyalQueenSeeds() {
 
     // Carousel 2
     const [emblaRef2, emblaApi2] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
-
     const scrollPrev2 = useCallback(() => {
         if (emblaApi2) emblaApi2.scrollPrev()
     }, [emblaApi2])
-
     const scrollNext2 = useCallback(() => {
         if (emblaApi2) emblaApi2.scrollNext()
     }, [emblaApi2])
@@ -91,11 +93,9 @@ export default function RoyalQueenSeeds() {
 
     // Carousel 3
     const [emblaRef3, emblaApi3] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
-
     const scrollPrev3 = useCallback(() => {
         if (emblaApi3) emblaApi3.scrollPrev()
     }, [emblaApi3])
-
     const scrollNext3 = useCallback(() => {
         if (emblaApi3) emblaApi3.scrollNext()
     }, [emblaApi3])
@@ -103,14 +103,21 @@ export default function RoyalQueenSeeds() {
 
     // Carousel 4
     const [emblaRef4, emblaApi4] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
-
     const scrollPrev4 = useCallback(() => {
         if (emblaApi4) emblaApi4.scrollPrev()
     }, [emblaApi4])
-
     const scrollNext4 = useCallback(() => {
         if (emblaApi4) emblaApi4.scrollNext()
     }, [emblaApi4])
+
+    // Carousel 5
+    const [emblaRef5, emblaApi5] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
+    const scrollPrev5 = useCallback(() => {
+        if (emblaApi5) emblaApi5.scrollPrev()
+    }, [emblaApi5])
+    const scrollNext5 = useCallback(() => {
+        if (emblaApi5) emblaApi5.scrollNext()
+    }, [emblaApi5])
 
 
     return <MyContainer>
@@ -175,21 +182,21 @@ export default function RoyalQueenSeeds() {
                     />
                     <Image
                         src={Influencer2}
-                        alt="Research: there are many different segments within the industry"
+                        alt="Research: there are many different segments within the industry, such as : growing, reviewing products, smoking in your bedroom, breeding, educationational content, cannabis science, and so on. Decide which areas align best with your skills, knowledge, and personality, and hone in on that. Photo of a woman blowing a large smoke cloud with the caption: People have gained huge followings from this alone!"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Influencer3}
-                        alt="Build Community: constant engagement with followers"
+                        alt="Build Community: constant engagement with followers (replaying to and liking comments, frequent stories, and cross-platform posting will make people want to stick around, and learn, and soak in the entertainment."
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Influencer4}
-                        alt="Tag your favorite influencers in the comments!"
+                        alt="Tag your favorite weed influencers in the comments!"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
@@ -215,70 +222,70 @@ export default function RoyalQueenSeeds() {
                 <div style={emblaContainerStyle}>
                     <Image
                         src={Cannamyths1}
-                        alt="Cannamyths: clearing up myths about cannabis"
+                        alt="Cannamyths: Clearing up myths about cannabis"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Cannamyths10}
-                        alt="Reality: cannabis legislation hasn't appeared to contribute to any statistical rise in violent crime"
+                        alt="Myth: cannabis use leads to higher levels of crimes. Reality: cannabis legislation hasn't appeared to contribute to any statistical rise in violent crime"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Cannamyths3}
-                        alt="Reality: while weed can help people in many different ways, cannabis use disorder is real"
+                        alt="Myth: Cannabis isn't addictive at all. Reality: while weed can help people in many different ways, cannabis use disorder is real"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Cannamyths4}
-                        alt="Reality: millions of cannabis users around the world enjoy the herb regularly, without even entertaining the idea of harder drugs"
+                        alt="Myth: Cannabis users are lazy. Reality: Cannabis users face a host of different stereotypes."
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Cannamyths5}
-                        alt="Reality: There's no science to support the idea that holding your hit increases the amount of THC absorbed"
+                        alt="Myth: Cannabis is a gateway drug. Reality: millions of cannabis users around the world enjoy the herb regularly, without even entertaining the idea of harder drugs"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Cannamyths6}
-                        alt="Reality: Cannabis withdrawal is a real thing"
+                        alt="Myth: Holding a hit will intensify your high. Reality: There's no science to support the idea that holding your hit increases the amount of THC absorbed"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Cannamyths7}
-                        alt="Smoking half an ounce the night before comes with a hangover of its own"
+                        alt="Myth: There isn't a cannabis withdrawal effect. Reality: Cannabis withdrawal is a real thing"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Cannamyths8}
-                        alt="To hit the pearly gates, you'd need to smoke about 1,500 lbs (680kg) of cannabis in about 15 minutes"
+                        alt="Myth: Weed hangovers don't exist. Reality: Smoking half an ounce the night before comes with a hangover of its own"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Cannamyths9}
-                        alt="And you? What other cannabis myths would you debunk?"
+                        alt="Myth: you can overdose on cannabis. Reality: To hit the pearly gates, you'd need to smoke about 1,500 lbs (680kg) of cannabis in about 15 minutes"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Cannamyths2}
-                        alt="Tag your favorite influencers in the comments!"
+                        alt="And you? What other cannabis myths would you debunk?"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
@@ -310,63 +317,63 @@ export default function RoyalQueenSeeds() {
                     />
                     <Image
                         src={Munchies2}
-                        alt="The attack"
+                        alt="The attack: THC activates CB1 receptors (the ones that promote food intake) upon entering the body. Even odour processing is much stronger at the point of THC intoxication. That's why we created this handy guide - with our top tips to protect yourself! Source: The endocannabinoid system controls food intake via olfactory processes - PubMed https://pubmed.ncbi.nlm.nih.gov"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Munchies3}
-                        alt="Prevention"
+                        alt="1. Prevention: Make munchies inconvenient. Convenience is usually the shortest route to temptatation. Keep any form of junk food away from your home."
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Munchies4}
-                        alt="Test your weapons"
+                        alt="2. Test your weapons: Try different strains. Take note of the ones that bring about the cravings, and ones that don't, and then go from there."
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Munchies5}
-                        alt="Nutrition is key"
+                        alt="3. Nutrition is key: Eat healthy food beforehand. Pick foods that will fill you up for the next few hours, such as those with high water content. For example: avodcado and toast, banana and peanut butter, yoghurt and granola."
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Munchies6}
-                        alt="Take breaks"
+                        alt="4. Take breaks: Stop during smoking. Keep yourself busy and productive. Example: learn a new skill, write in your journal, meditate..."
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Munchies7}
-                        alt="Keep it fresh"
+                        alt="5. Keep it fresh: Brush your teeth. Refreshing, mint-flavored toothpaste can kill these flavors in an instant. "
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Munchies8}
-                        alt="You're infected"
+                        alt="6. You're infected!: Get some exercise. Make sure you're not doing anything too extreme while impaired. Hitting a punching bag? YES. Going rock climbing? Not a good idea."
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Munchies9}
-                        alt="Secret weapon: CBD oil"
+                        alt="7. Secret weapon: Try CBD oil. CBD oil has the potential to modulate THC's psychotropic effects. Source: Cannabidiol Inhibits Endocannabinoid Signaling in Autaptic Hippocampal Nurons - PubMed https://pubmed.ncbi.nlm.nih.gov"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Munchies10}
-                        alt="What is your favorite food to eat when the munchies attack?"
+                        alt="What is your favourite food to eat when the munchies attack?"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
@@ -398,28 +405,28 @@ export default function RoyalQueenSeeds() {
                     />
                     <Image
                         src={Orgasms2}
-                        alt="Women experience stronger contractions"
+                        alt="Women experience stronger contractions thoughout their stoned orgasm when compared to their sober orgasm. Cannabis edibles made this effect even stronger. Source: Can weed help you have better orgasms? - Vice https://tonic.vice.com"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Orgasms3}
-                        alt="The endocannabinoid 2-arachidonoylglycerol was found to rise specifically during masturbation and orgasm"
+                        alt="The endocannabinoid 2-arachidonoylglycerol was found to rise specifically during masturbation and orgasm. Source: Masturbation to orgasm stimulates the release of the endocannabinoid 2-arachidonoylglycerol in Humans - PubMed https://www.ncbi.nlm.nih.gov"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Orgasms4}
-                        alt="By increasing your cannabinoid intake and stimulating the endocannabinoid system"
+                        alt="By increasing your cannabinoid intake and stimulating the endocannabinoid system, you may experience greater arousal and greater orgasms to follow"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
                     />
                     <Image
                         src={Orgasms5}
-                        alt="What was your experience?"
+                        alt="If you too are happy to experiment with cannabis and sex, tell us, how was your experience? Share it! 😉"
                         width={1000}
                         height={1251}
                         style={emblaSliderStyle}
@@ -433,6 +440,61 @@ export default function RoyalQueenSeeds() {
                     <ChevronLeft />
                 </IconButton>
                 <IconButton aria-label="Next" onClick={scrollNext4}>
+                    <ChevronRight />
+                </IconButton>
+            </div>
+            <br/>
+            <br/>
+            <br />
+            <br />
+            <Typography variant='h4'>Cannabis and insomnia</Typography>
+            <br />
+            <div style={emblaStyle} ref={emblaRef5}>
+                <div style={emblaContainerStyle}>
+                    <Image
+                        src={Insomnia1}
+                        alt="Insomnia"
+                        width={1000}
+                        height={1251}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={Insomnia2}
+                        alt="Insomnia is a common sleeping disorder that negatively impacts sleep onset, duration and quality. Among the various existing treatments, cannabis might also help since it has, relaxing, sometimes even sleepy, effects."
+                        width={1000}
+                        height={1251}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={Insomnia3}
+                        alt="Research showed that: Consumption of cannabis is linked to improvements in insomnia. THC and CBN are known for their ability to chill out the mind. Strains with more CBD are associated with better sleep. THC has sedative effects. Vigil JM, Stith SS, Diviant JP, Brokelmann F, Keeling K, Hall B. Effectiveness of Raw, Natural Medical Cannabis Flower for Treating Insomnia under Naturalistic Conditions. Medicines (Basel). 2018 Jul 11;5(3):75"
+                        width={1000}
+                        height={1251}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={Insomnia4}
+                        alt="Top 5 strains for insomnia are: Haze Berry, White Widow, Watermelon, Legendary OG Punch, and Special Kush 1."
+                        width={1000}
+                        height={1251}
+                        style={emblaSliderStyle}
+                    />
+                    <Image
+                        src={Insomnia5}
+                        alt="Do you suffer from insomnia or any other sleeping issues?"
+                        width={1000}
+                        height={1251}
+                        style={emblaSliderStyle}
+                    />
+                </div>
+                <br />
+                <IconButton
+                    aria-label="Previous"
+                    onClick={scrollPrev5}
+                >
+                    <ChevronLeft />
+                </IconButton>
+                <IconButton aria-label="Next" onClick={scrollNext5}>
                     <ChevronRight />
                 </IconButton>
             </div>
