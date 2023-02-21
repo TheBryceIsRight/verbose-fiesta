@@ -12,6 +12,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import AutoHeight from 'embla-carousel-auto-height'
 import Grid from '@mui/material/Unstable_Grid2';
 import { CSSProperties } from "react"
+import { altByIndex } from './imageByIndex'
 
 const autoplayOptions = {
     delay: 10000,
@@ -119,7 +120,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                                 <Image
                                     // style={embla__slide__img}
                                     src={imageByIndex(index, props.type)}
-                                    alt="Your alt text"
+                                    alt={altByIndex(index, props.type)}
                                     height={1320}
                                     width={1190}
                                 />

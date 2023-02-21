@@ -18,8 +18,8 @@ export default function RoyalQueenSeeds() {
 
     const theme = useTheme();
     const { t } = useTranslation();
-
     const OPTIONS: EmblaOptionsType = {}
+
     const SLIDE_COUNT_INFLUENCER = 4
     const SLIDE_COUNT_MYTHS = 10
     const SLIDE_COUNT_MUNCHIES = 10

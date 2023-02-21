@@ -54,20 +54,33 @@ export const insomnia: string[] = [Insomnia1.src, Insomnia2.src, Insomnia3.src, 
 export const insomnia_alt: string[] = ["Insomnia", "Insomnia is a common sleeping disorder that negatively impacts sleep onset, duration and quality. Among the various existing treatments, cannabis might also help since it has, relaxing, sometimes even sleepy, effects.", "Research showed that: Consumption of cannabis is linked to improvements in insomnia. THC and CBN are known for their ability to chill out the mind. Strains with more CBD are associated with better sleep. THC has sedative effects. Vigil JM, Stith SS, Diviant JP, Brokelmann F, Keeling K, Hall B. Effectiveness of Raw, Natural Medical Cannabis Flower for Treating Insomnia under Naturalistic Conditions. Medicines (Basel). 2018 Jul 11;5(3):75", "Top 5 strains for insomnia are: Haze Berry, White Widow, Watermelon, Legendary OG Punch, and Special Kush 1.", "Do you suffer from insomnia or any other sleeping issues?"]
 
 const imageByIndex = (index: number, type: string): string => {
-    if (type === "influencer") {
-        return influencer[index % influencer.length]
-    } else if (type === "cannamyths") {
-        return cannamyths[index % cannamyths.length]
-    } else if (type === "munchies") {
-        return munchies[index % munchies.length]
-    } else if (type === "orgasms") {
-        return orgasms[index % orgasms.length]
-    } else if (type === "insomnia") {
-        return insomnia[index % insomnia.length]
-    }
-    else {
-        return insomnia[index % insomnia.length]
-    }
+    return type === "influencer" ?
+        influencer[index % influencer.length]
+    : type === "cannamyths" ?
+        cannamyths[index % cannamyths.length]
+    : type === "munchies" ?
+        munchies[index % munchies.length]
+    : type === "orgasms" ?
+        orgasms[index % orgasms.length]
+    : type === "insomnia" ?
+        insomnia[index % insomnia.length]
+    :
+        insomnia[index % insomnia.length]
+}
+
+export const altByIndex = (index: number, type: string): string => {
+    return type === "influencer" ?
+        influencer_alt[index % influencer.length]
+    : type === "cannamyths" ?
+        cannamyths_alt[index % cannamyths.length]
+    : type === "munchies" ?
+        munchies_alt[index % munchies.length]
+    : type === "orgasms" ?
+        orgasms_alt[index % orgasms.length]
+    : type === "insomnia" ?
+        insomnia_alt[index % insomnia.length]
+    :
+        insomnia_alt[index % insomnia.length]
 }
 
 
