@@ -15,6 +15,8 @@ import ConstructionLight from "../public/assets/landing/under_construction_light
 import ConstructionDark from "../public/assets/landing/under_construction_dark.svg"
 import RQSLight from "../public/assets/landing/RQS_light.png"
 import RQSDark from "../public/assets/landing/RQS_dark.png"
+import Magazine_illustrations_cover from "../public/assets/magazine-illustrations/Magazine_illustrations_cover.png"
+import Omonovo from "../public/assets/omonovo/Omonovo.png"
 
 export default function Index() {
   const { t } = useTranslation()
@@ -86,7 +88,86 @@ export default function Index() {
           <br />
           <br />
           <br />
-          <MuiContainer maxWidth="sm" style={{ alignItems: "center", textAlign: "center" }}>
+          <MuiContainer style={{textAlign: "left"}}>
+            <Typography variant='h3'>Previous Work</Typography>
+            <br />
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+              <Link href="/work/functionize" passHref>
+                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                  <div>
+                    <div className="mb-5">
+                      <div className="sm:mx-0">
+                        {theme.palette.mode === "light" ?
+                          <Image
+                            src={Magazine_illustrations_cover}
+                            alt='Cover Image for Functionize'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                          :
+                          <Image
+                            src={Magazine_illustrations_cover}
+                            alt='Cover Image for Functionize'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                        }
+                      </div>
+                    </div>
+                    <Typography variant='h4'>
+                      Magazine Illustrations
+                    </Typography>
+                    <br />
+                    <Typography variant='body1'>Illustrations for opinion editorials for Sant Jucat</Typography>
+                  </div>
+                </ButtonBase>
+              </Link>
+              <Link href="/work/elavon-status" passHref>
+                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                  <div>
+                    <div className="mb-5">
+                      <div className="sm:mx-0">
+                        {theme.palette.mode === "light" ?
+                          <Image
+                            src={Omonovo}
+                            alt='Cover Image for System Status'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                          :
+                          <Image
+                            src={Omonovo}
+                            alt='Cover Image for System Status'
+                            width={1300}
+                            height={630}
+                            style={{ borderRadius: 8 }}
+                            placeholder='blur'
+                            loading="eager"
+                          />
+                        }
+                      </div>
+                    </div>
+                    <Typography variant='h4'>
+                    Omonovo animation
+                    </Typography>
+                    <br />
+                    <Typography variant='body1'>Developing animated promotional videos for SaaS healthcare startup</Typography>
+                  </div>
+                </ButtonBase>
+              </Link>
+              </div>
+              </MuiContainer>
+        </MuiContainer>
+        <MuiContainer maxWidth="sm" style={{ alignItems: "center", textAlign: "center" }}>
             {theme.palette.mode === "light" ?
               <Image
                 src={ConstructionLight}
@@ -109,53 +190,6 @@ export default function Index() {
               {t("construction")}
             </Typography>
           </MuiContainer>
-          {/* <section>
-            <Typography variant='h3'>{t("previous_work")}</Typography>
-            <br />
-            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-              <Link href="/work/functionize">
-                <ButtonBase style={{ textAlign: 'left' }}>
-                  <PostPreview
-                    title="Lorem Ipsum"
-                    coverImage='/assets/blog/functionize/functionize.png'
-                    slug="2-functionize"
-                    excerpt='Lorem ipsum dolor sit amet consectetur.'
-                  />
-                </ButtonBase>
-              </Link>
-              <Link href="/work/elavon-status">
-                <ButtonBase style={{ textAlign: 'left' }}>
-                  <PostPreview
-                    title="Lorem Ipsum"
-                    coverImage='/assets/blog/systemstatus/system-status.png'
-                    slug="3-elavon-status"
-                    excerpt='Lorem ipsum dolor sit amet consectetur.'
-                  />
-                </ButtonBase>
-              </Link>
-              <Link href="/work/elavon-dev">
-                <ButtonBase style={{ textAlign: 'left' }}>
-                  <PostPreview
-                    title="Lorem Ipsum"
-                    coverImage='/assets/blog/elavon/dev-portal.png'
-                    slug="4-elavon-dev"
-                    excerpt='Lorem ipsum dolor sit amet consectetur.'
-                  />
-                </ButtonBase>
-              </Link>
-              <Link href="/work/me">
-                <ButtonBase style={{ textAlign: 'left' }}>
-                  <PostPreview
-                    title="Lorem Ipsum"
-                    coverImage='/assets/blog/aboutme/coffee.png'
-                    slug="5-me"
-                    excerpt='Lorem ipsum dolor sit amet consectetur.'
-                  />
-                </ButtonBase>
-              </Link>
-            </div>
-          </section> */}
-        </MuiContainer>
       </Layout>
     </>
   )
