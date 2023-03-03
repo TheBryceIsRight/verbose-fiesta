@@ -29,6 +29,9 @@ export const LangStrings = {
         graphic_designer: "Graphic Designer",
         solo_designer: "Solo Designer",
         construction: "This portfolio is still being built, please pardon our dust!",
+        animation: "Animation",
+        animator: "Animator",
+        illustrator: "Illustrator",
     },
     es: {
         hi: "¡Hola! Soy Sandra",
@@ -60,6 +63,10 @@ export const LangStrings = {
         graphic_designer: "Diseñadora grafica",
         solo_designer: "Diseñadora solista",
         construction: "Esta cartera aún se está construyendo, ¡perdone nuestro polvo!",
+        animation: "Animación",
+        animator: "Animadora",
+        illustrator: "Ilustradora",
+
     },
     ca: {
         hi: "Hola! Sóc la Sandra",
@@ -91,5 +98,9 @@ export const LangStrings = {
         graphic_designer: "Dissenyador gràfic",
         solo_designer: "Dissenyador solista",
         construction: "Aquesta cartera encara s'està construint, si us plau, disculpeu la nostra pols!",
+        animation: "Animació",
+        animator: "Animador",
+        illustrator: "Illustrador",
+
     },
 }

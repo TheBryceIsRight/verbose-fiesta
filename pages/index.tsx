@@ -128,7 +128,7 @@ export default function Index() {
                   </div>
                 </ButtonBase>
               </Link>
-              <Link href="/work/elavon-status" passHref>
+              <Link href="/work/omonovo-animation" passHref>
                 <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                   <div>
                     <div className="mb-5">

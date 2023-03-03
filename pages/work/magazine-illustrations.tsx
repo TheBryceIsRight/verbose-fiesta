@@ -39,7 +39,7 @@ export default function MagazineIllustrations() {
         <br />
         <Container maxWidth="md">
             <SummaryCard
-                role="graphic_designer"
+                role="illustrator"
                 company="Tot Sant Cugat"
                 timeframe="TBD"
                 teamstyle="solo_designer"
