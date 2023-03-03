@@ -15,7 +15,7 @@ import ConstructionLight from "../public/assets/landing/under_construction_light
 import ConstructionDark from "../public/assets/landing/under_construction_dark.svg"
 import RQSLight from "../public/assets/landing/RQS_light.png"
 import RQSDark from "../public/assets/landing/RQS_dark.png"
-import Magazine_illustrations_cover from "../public/assets/magazine-illustrations/Magazine_illustrations_cover.png"
+import Magazine_illustrations_cover from "../public/assets/magazine-illustrations/Magazine_Illustrations_cover.png"
 import Omonovo from "../public/assets/omonovo/Omonovo.png"
 import Lineart from "../public/assets/lineart/LineartCover.png"
 import AZCoffee from "../public/assets/az-coffee/Az_Coffee_02.png"

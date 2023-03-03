@@ -6,21 +6,21 @@ import Head from 'next/head';
 import { useTheme } from '@mui/material/styles';
 import useTranslation from "../../intl/useTranslation";
 import Image from "next/image";
-import Lineart1 from "../../public/assets/lineart/lineart_01.png";
-import Lineart2 from "../../public/assets/lineart/lineart_02.png";
-import Lineart3 from "../../public/assets/lineart/lineart_03.png";
-import Lineart4 from "../../public/assets/lineart/lineart_04.png";
-import Lineart5 from "../../public/assets/lineart/lineart_05.png";
-import Lineart6 from "../../public/assets/lineart/lineart_06.png";
-import Lineart7 from "../../public/assets/lineart/lineart_07.png";
-import Lineart8 from "../../public/assets/lineart/lineart_08.png";
-import Lineart9 from "../../public/assets/lineart/lineart_09.png";
-import Lineart10 from "../../public/assets/lineart/lineart_10.png";
-import Lineart11 from "../../public/assets/lineart/lineart_11.png";
-import Lineart12 from "../../public/assets/lineart/lineart_12.png";
-import Lineart13 from "../../public/assets/lineart/lineart_13.png";
-import Lineart14 from "../../public/assets/lineart/lineart_14.png";
-import Lineart15 from "../../public/assets/lineart/lineart_15.png";
+import Lineart1 from "../../public/assets/lineart/Lineart_01.png";
+import Lineart2 from "../../public/assets/lineart/Lineart_02.png";
+import Lineart3 from "../../public/assets/lineart/Lineart_03.png";
+import Lineart4 from "../../public/assets/lineart/Lineart_04.png";
+import Lineart5 from "../../public/assets/lineart/Lineart_05.png";
+import Lineart6 from "../../public/assets/lineart/Lineart_06.png";
+import Lineart7 from "../../public/assets/lineart/Lineart_07.png";
+import Lineart8 from "../../public/assets/lineart/Lineart_08.png";
+import Lineart9 from "../../public/assets/lineart/Lineart_09.png";
+import Lineart10 from "../../public/assets/lineart/Lineart_10.png";
+import Lineart11 from "../../public/assets/lineart/Lineart_11.png";
+import Lineart12 from "../../public/assets/lineart/Lineart_12.png";
+import Lineart13 from "../../public/assets/lineart/Lineart_13.png";
+import Lineart14 from "../../public/assets/lineart/Lineart_14.png";
+import Lineart15 from "../../public/assets/lineart/Lineart_15.png";
 
 
 
@@ -39,7 +39,7 @@ export default function MagazineIllustrations() {
         <br />
         <br />
         <br />
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
             <SummaryCard
                 role="illustrator"
                 company="Tot Sant Cugat"

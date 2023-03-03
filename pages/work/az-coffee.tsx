@@ -11,7 +11,7 @@ import Coffee2 from "../../public/assets/az-coffee/Az_Coffee_02.png"
 import Coffee3 from "../../public/assets/az-coffee/Az_Coffee_03.png"
 import Coffee4 from "../../public/assets/az-coffee/Az_Coffee_04.png"
 import Coffee5 from "../../public/assets/az-coffee/Az_Coffee_05.png"
-import CoffeeGuide from "../../public/assets/az-coffee/Az_Coffee_BrandGuide.png"
+import CoffeeGuide from "../../public/assets/az-coffee/Guide.png"
 
 
 
@@ -30,7 +30,7 @@ export default function MagazineIllustrations() {
         <br />
         <br />
         <br />
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
             <SummaryCard
                 role="graphic_designer"
                 company="Tot Sant Cugat"
