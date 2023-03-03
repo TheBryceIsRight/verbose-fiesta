@@ -44,23 +44,27 @@ export default function MagazineIllustrations() {
             <br />
             <Image
                 src={CoffeeGuide}
-                alt="Article 1"
+                alt="Coffee 1"
                 style={{borderRadius: 4}}
+                loading="eager"
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Coffee1}
-                alt="Article 1"
+                alt="Coffee 2"
                 style={{borderRadius: 4}}
+                loading="eager"
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Coffee2}
-                alt="Article 1"
+                alt="Coffee 3"
                 style={{borderRadius: 4}}
             >
             </Image>
@@ -68,7 +72,7 @@ export default function MagazineIllustrations() {
             <br />
             <Image
                 src={Coffee3}
-                alt="Article 1"
+                alt="Coffee 4"
                 style={{borderRadius: 4}}
             >
             </Image>
@@ -76,7 +80,7 @@ export default function MagazineIllustrations() {
             <br />
             <Image
                 src={Coffee4}
-                alt="Article 1"
+                alt="Coffee 5"
                 style={{borderRadius: 4}}
             >
             </Image>
@@ -84,7 +88,7 @@ export default function MagazineIllustrations() {
             <br />
             <Image
                 src={Coffee5}
-                alt="Article 1"
+                alt="Coffee 6"
                 style={{borderRadius: 4}}
             >
             </Image>

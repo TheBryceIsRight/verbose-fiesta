@@ -64,6 +64,7 @@ export default function Index() {
                     width={745}
                     height={300}
                     loading="eager"
+                    placeholder='blur'
                   />
                   :
                   <Image
@@ -72,6 +73,7 @@ export default function Index() {
                     width={745}
                     height={300}
                     loading="eager"
+                    placeholder='blur'
                   />
                 }
                 <br />
@@ -79,7 +81,6 @@ export default function Index() {
                   Royal Queen Seeds
                 </Typography>
                 <br />
-                {/* <Typography variant="body1">Lorem ipsum dolor sit amet consectetur.</Typography> */}
               </MuiContainer>
             </ButtonBase>
           </Link>

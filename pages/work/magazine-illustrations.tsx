@@ -53,110 +53,126 @@ export default function MagazineIllustrations() {
                 src={Article1}
                 alt="Article 1"
                 style={{borderRadius: 4}}
+                placeholder='blur'
+                loading="eager"
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Article2}
-                alt="Article 1"
+                alt="Article 2"
                 style={{borderRadius: 4}}
+                placeholder='blur'
+                loading="eager"
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Article3}
-                alt="Article 1"
+                alt="Article 3"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Article4}
-                alt="Article 1"
+                alt="Article 4"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Article5}
-                alt="Article 1"
+                alt="Article 5"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Article6}
-                alt="Article 1"
+                alt="Article 6"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br/>
             <br/>
             <Image
                 src={Article7}
-                alt="Article 1"
+                alt="Article 7"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Illustration1}
-                alt="Article 1"
+                alt="Illustration 1"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Illustration2}
-                alt="Article 1"
+                alt="llustration 2"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Illustration3}
-                alt="Article 1"
+                alt="llustration 3"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Illustration4}
-                alt="Article 1"
+                alt="llustration 4"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Illustration5}
-                alt="Article 1"
+                alt="llustration 5"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Illustration6}
-                alt="Article 1"
+                alt="llustration 6"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Illustration7}
-                alt="Article 1"
+                alt="llustration 7"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
         </Container>

@@ -53,112 +53,128 @@ export default function MagazineIllustrations() {
             <br />
             <Image
                 src={Lineart1}
-                alt="Article 1"
+                alt="Line art 1"
                 style={{borderRadius: 4}}
+                loading="eager"
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart2}
-                alt="Article 1"
+                alt="Line art 2"
                 style={{borderRadius: 4}}
+                loading="eager"
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart3}
-                alt="Article 1"
+                alt="Line art 3"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart4}
-                alt="Article 1"
+                alt="Line art 4"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart5}
-                alt="Article 1"
+                alt="Line art 5"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart6}
-                alt="Article 1"
+                alt="Line art 6"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br/>
             <br/>
             <Image
                 src={Lineart7}
-                alt="Article 1"
+                alt="Line art 7"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart8}
-                alt="Article 1"
+                alt="Line art 8"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart9}
-                alt="Article 1"
+                alt="Line art 9"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart10}
-                alt="Article 1"
+                alt="Line art 10"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart11}
-                alt="Article 1"
+                alt="Line art 11"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart12}
-                alt="Article 1"
+                alt="Line art 12"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart13}
-                alt="Article 1"
+                alt="Line art 13"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
             <br />
             <Image
                 src={Lineart14}
-                alt="Article 1"
+                alt="Line art 14"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
@@ -167,6 +183,7 @@ export default function MagazineIllustrations() {
                 src={Lineart15}
                 alt="Article 1"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
         </Container>
