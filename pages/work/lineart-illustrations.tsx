@@ -21,10 +21,10 @@ import Lineart12 from "../../public/assets/lineart/Lineart_12.png";
 import Lineart13 from "../../public/assets/lineart/Lineart_13.png";
 import Lineart14 from "../../public/assets/lineart/Lineart_14.png";
 import Lineart15 from "../../public/assets/lineart/Lineart_15.png";
+import ProtectedImage from "../../components/protected-image";
 
 
-
-export default function MagazineIllustrations() {
+export default function LineartIllustrations() {
 
     const theme = useTheme();
     const { t } = useTranslation();
@@ -179,13 +179,10 @@ export default function MagazineIllustrations() {
             </Image>
             <br />
             <br />
-            <Image
-                src={Lineart15}
-                alt="Article 1"
-                style={{borderRadius: 4}}
-                placeholder='blur'
-            >
-            </Image>
+            <ProtectedImage
+                src={Lineart15.src}
+                alt="Coffee 6"
+            />
         </Container>
         <Container maxWidth="md">
             <br />

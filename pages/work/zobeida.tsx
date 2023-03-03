@@ -11,6 +11,7 @@ import Zobeida2 from "../../public/assets/zobeida/Zobeida_02.png"
 import Zobeida3 from "../../public/assets/zobeida/Zobeida_03.png"
 import Zobeida4 from "../../public/assets/zobeida/Zobeida_04.png"
 import Zobeida5 from "../../public/assets/zobeida/Zobeida_05.png"
+import ProtectedImage from "../../components/protected-image";
 
 
 export default function Zobeida() {
@@ -20,7 +21,7 @@ export default function Zobeida() {
 
     return <MyContainer>
         <Head>
-            <title>Coffee Designs</title>
+            <title>Zobeida</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <br />
@@ -78,13 +79,10 @@ export default function Zobeida() {
             </Image>
             <br />
             <br />
-            <Image
-                src={Zobeida5}
-                alt="Coffee 5"
-                style={{borderRadius: 4}}
-                placeholder='blur'
-            >
-            </Image>
+            <ProtectedImage
+                src={Zobeida5.src}
+                alt="Zobeida"
+            />
             <br />
         </Container>
         <Container maxWidth="md">

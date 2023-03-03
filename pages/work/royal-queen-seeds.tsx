@@ -12,6 +12,7 @@ import { useTheme } from '@mui/material/styles';
 import useTranslation from "../../intl/useTranslation"
 import EmblaCarousel from '../../components/emblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
+import ProtectedImage from "../../components/protected-image"
 
 
 export default function RoyalQueenSeeds() {
@@ -57,20 +58,14 @@ export default function RoyalQueenSeeds() {
             <br />
             <br />
             {theme.palette.mode === "light" ?
-                <Image
+                <ProtectedImage
                     src={RoyalQueenSeedsLogoLight}
                     alt="Logo for royal queen seeds"
-                    width={745}
-                    height={300}
-                    loading="eager"
                 />
                 :
-                <Image
+                <ProtectedImage
                     src={RoyalQueenSeedsLogoDark}
                     alt="Logo for royal queen seeds"
-                    width={745}
-                    height={300}
-                    loading="eager"
                 />
             }
             <br />

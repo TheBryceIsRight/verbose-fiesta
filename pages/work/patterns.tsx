@@ -30,6 +30,8 @@ import Patterns21 from "../../public/assets/patterns/Patterns_21.png";
 import Patterns22 from "../../public/assets/patterns/Patterns_22.png";
 import Patterns23 from "../../public/assets/patterns/Patterns_23.png";
 import Patterns24 from "../../public/assets/patterns/Patterns_24.png";
+import ProtectedImage from "../../components/protected-image";
+
 
 
 export default function PatternDesigns() {
@@ -261,13 +263,10 @@ export default function PatternDesigns() {
             </Image>
             <br />
             <br />
-            <Image
-                src={Patterns24}
-                alt="Article 1"
-                style={{ borderRadius: 4 }}
-                placeholder='blur'
-            >
-            </Image>
+            <ProtectedImage
+                src={Patterns24.src}
+                alt="Patterns"
+            />
         </Container>
         <Container maxWidth="md">
             <br />

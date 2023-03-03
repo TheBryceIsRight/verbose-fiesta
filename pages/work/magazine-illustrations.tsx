@@ -19,8 +19,8 @@ import Illustration3 from "../../public/assets/magazine-illustrations/illustrati
 import Illustration4 from "../../public/assets/magazine-illustrations/illustration_04.png";
 import Illustration5 from "../../public/assets/magazine-illustrations/illustration_05.png";
 import Illustration6 from "../../public/assets/magazine-illustrations/illustration_06.png";
-import Illustration7 from "../../public/assets/magazine-illustrations/illustration_07.png";
-
+import Illustration7 from "../../public/assets/magazine-illustrations/illustration_06.png";
+import ProtectedImage from "../../components/protected-image";
 
 export default function MagazineIllustrations() {
 
@@ -168,13 +168,10 @@ export default function MagazineIllustrations() {
             </Image>
             <br />
             <br />
-            <Image
-                src={Illustration7}
-                alt="llustration 7"
-                style={{borderRadius: 4}}
-                placeholder='blur'
-            >
-            </Image>
+            <ProtectedImage
+                src={Illustration7.src}
+                alt="Coffee 6"
+            />
         </Container>
         <Container maxWidth="md">
             <br />

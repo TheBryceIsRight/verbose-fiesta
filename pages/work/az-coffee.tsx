@@ -12,6 +12,7 @@ import Coffee3 from "../../public/assets/az-coffee/Az_Coffee_03.png"
 import Coffee4 from "../../public/assets/az-coffee/Az_Coffee_04.png"
 import Coffee5 from "../../public/assets/az-coffee/Az_Coffee_05.png"
 import CoffeeGuide from "../../public/assets/az-coffee/Guide.png"
+import ProtectedImage from "../../components/protected-image";
 
 
 export default function AZCoffee() {
@@ -88,13 +89,10 @@ export default function AZCoffee() {
             </Image>
             <br />
             <br />
-            <Image
-                src={Coffee5}
+            <ProtectedImage
+                src={Coffee5.src}
                 alt="Coffee 6"
-                style={{borderRadius: 4}}
-                placeholder='blur'
-            >
-            </Image>
+            />
             <br />
             <br />
         </Container>
