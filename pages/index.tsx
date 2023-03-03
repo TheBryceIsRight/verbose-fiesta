@@ -1,4 +1,3 @@
-import Container from '../components/container'
 import Layout from '../components/layout'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -8,7 +7,6 @@ import { Button } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { Mail } from '@mui/icons-material'
 import useTranslation from "../intl/useTranslation"
-import RQS from "../public/assets/royal-queen-seeds/RQS.png"
 import Image from 'next/image'
 import { useTheme } from '@mui/material/styles';
 import ConstructionLight from "../public/assets/landing/under_construction_light.svg"
@@ -19,6 +17,9 @@ import Magazine_illustrations_cover from "../public/assets/magazine-illustration
 import Omonovo from "../public/assets/omonovo/Omonovo.png"
 import Lineart from "../public/assets/lineart/LineartCover.png"
 import AZCoffee from "../public/assets/az-coffee/Az_Coffee_02.png"
+import DesignPatterns from  "../public/assets/patterns/PatternsCover.png"
+import Zobeida from  "../public/assets/zobeida/ZobeidaCover.png"
+
 
 export default function Index() {
   const { t } = useTranslation()
@@ -189,8 +190,60 @@ export default function Index() {
               </Link>
             </div>
           </MuiContainer>
+          <MuiContainer style={{ textAlign: "left" }}>
+            <Typography variant='h3'>From the archive</Typography>
+            <br />
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+              <Link href="/work/zobeida" passHref>
+                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                  <div>
+                    <div className="mb-5">
+                      <div className="sm:mx-0">
+                        <Image
+                          src={Zobeida}
+                          alt='Cover Image for Magazine Illustrations'
+                          style={{ borderRadius: 8 }}
+                          placeholder='blur'
+                          loading="eager"
+                        />
+                      </div>
+                    </div>
+                    <Typography variant='h4'>
+                      Zobeida
+                    </Typography>
+                    <br />
+                    <Typography variant='body1'>Illustrations inspired by Las Ciudades Invisibles by Italo Calvino</Typography>
+                  </div>
+                </ButtonBase>
+              </Link>
+              <Link href="/work/patterns" passHref>
+                <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
+                  <div>
+                    <div className="mb-5">
+                      <div className="sm:mx-0">
+                        <Image
+                          src={DesignPatterns}
+                          alt='Cover Image for Omonovo'
+                          style={{ borderRadius: 8 }}
+                          placeholder='blur'
+                          loading="eager"
+                        />
+
+                      </div>
+                    </div>
+                    <Typography variant='h4'>
+                      Pattern Designs
+                    </Typography>
+                    <br />
+                    <Typography variant='body1'>Patterns I worked on during my illustration internship</Typography>
+                  </div>
+                </ButtonBase>
+              </Link>
+            </div>
+          </MuiContainer>
         </MuiContainer>
-        <MuiContainer maxWidth="sm" style={{ alignItems: "center", textAlign: "center" }}>
+        {/* In case we need a work in progress disclaimer in the future */}
+        {/* <MuiContainer maxWidth="sm" style={{ alignItems: "center", textAlign: "center" }}>
           {theme.palette.mode === "light" ?
             <Image
               src={ConstructionLight}
@@ -212,7 +265,7 @@ export default function Index() {
           <Typography variant='body1'>
             {t("construction")}
           </Typography>
-        </MuiContainer>
+        </MuiContainer> */}
       </Layout>
     </>
   )

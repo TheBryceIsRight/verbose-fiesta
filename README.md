@@ -1,65 +1,101 @@
-# Sandra's Design Portfolio
+# Sandra's UX Design Portfolio
 
-## Made using a statically generated blog example with Next.js, Markdown, and TypeScript
+## Made with Next.js, Material UI React, and TypeScript
 
 This portfolio is based on the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) from Vercel plus TypeScript.
 
 This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using Markdown files as the data source.
 
-The blog posts are stored in `/_posts` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
+## Deployment
 
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
+[https://sandra-benito-portfolio.vercel.app/](https://sandra-benito-portfolio.vercel.app/)
 
-## Demo
 
-[https://next-blog-starter.vercel.app/](https://next-blog-starter.vercel.app/)
+# Dependencies
+[Next.js v13](https://github.com/vercel/next.js/)
 
-## Deploy your own
+[Embla Carousel](https://www.embla-carousel.com/)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/blog-starter)
+[Material UI React v5](https://mui.com/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter&project-name=blog-starter&repository-name=blog-starter)
+[remark-html](https://github.com/remarkjs/remark-html)
 
-### Related examples
+[Typescript](https://github.com/microsoft/TypeScript)
 
-- [WordPress](/examples/cms-wordpress)
-- [DatoCMS](/examples/cms-datocms)
-- [Sanity](/examples/cms-sanity)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent)
-- [Umbraco Heartcore](/examples/cms-umbraco-heartcore)
-- [Builder.io](/examples/cms-builder-io)
-- [TinaCMS](/examples/cms-tina/)
-- [Enterspeed](/examples/cms-enterspeed)
+[Tailwind CSS](https://tailwindcss.com/)
 
-## How to use
+# Set up and installation
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Install NVM
 
-```bash
-npx create-next-app --example blog-starter blog-starter-app
+Install the node version manager in case you need to upgrade node's version in the future.
+
+[NVM](https://github.com/nvm-sh/nvm)
+
+## Install PNPM
+
+This is a package manager, which will manage your dependencies for you and keep the project up to date. PNPM is currently the fastest one, so run
+
+```
+npm install -g pnpm
 ```
 
-```bash
-yarn create next-app --example blog-starter blog-starter-app
+The -g flag indicates this is a global install, i.e. it will install system-wide.
+
+## Setup
+
+```
+pnpm i
+pnpm run dev
 ```
 
-```bash
-pnpm create next-app --example blog-starter blog-starter-app
-```
+The site will be start on [http://localhost:3000](http://localhost:3000). If it doesn't work, leave me a comment on this repo or submit a pull request.
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+Build the webapp for production with:
+```
+pnpm build
+```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
-# Notes
+## Git
 
-`blog-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
+To use Git you'll need to install it first, you can do so [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+Once installed, you need to go and download [Visual Studio Code](https://code.visualstudio.com/). This isn't technically required to use Git but it will make it a lot easier.
+
+And after that go download [GitHub Desktop](https://desktop.github.com/). This will help get the initial setup out of the way.
+
+Now, assuming everything is installed, you need open a terminal in the directory where the project is located. If you've opened the project in VS Code already, great! VS Code will navigate you to the correct place automatically. From here, making a Git commit isn't as hard as you might think.
+
+The first thing you always do when you open a project is **pull**. This ensures that if anyone else has worked on the project your local copy is up to date. 
+
+```
+git pull
+```
+
+If it says everything up to date, then you are good to go.
+
+In order to start making changes, first you need to tell Git that you want to push all changes you have to the cloud. To do this we write
+
+```
+git add .
+```
+
+That period after the add indicates to scan the whole project for recent changes. 
+
+Next we need to start the preparations to push changes. We need to tell Git what we are doing, and if it's not a super important change feel free to say that it's "minor fixes" or something to that effect. The more specific you can be the better though.
+
+```
+git commit -m "my first commit"
+```
+
+This will bundle all the changes you made to make them ready to go to the cloud. 
+
+Finally, we need to tell Git to push out these changes since they're ready to go. 
+
+```
+git push
+```
+
+This will push the changes to the cloud, and Vercel will automatically deploy them in about 2 minutes. And that's it!

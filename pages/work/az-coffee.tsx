@@ -14,8 +14,7 @@ import Coffee5 from "../../public/assets/az-coffee/Az_Coffee_05.png"
 import CoffeeGuide from "../../public/assets/az-coffee/Guide.png"
 
 
-
-export default function MagazineIllustrations() {
+export default function AZCoffee() {
 
     const theme = useTheme();
     const { t } = useTranslation();
