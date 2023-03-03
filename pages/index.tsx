@@ -92,7 +92,7 @@ export default function Index() {
             <Typography variant='h3'>Previous Work</Typography>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-              <Link href="/work/functionize" passHref>
+              <Link href="/work/magazine-illustrations" passHref>
                 <ButtonBase style={{ textAlign: 'left', borderRadius: 6 }} focusRipple={true}>
                   <div>
                     <div className="mb-5">
