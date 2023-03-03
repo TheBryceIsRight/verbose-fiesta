@@ -65,11 +65,11 @@ export default function OmonovoAnimation() {
             <br />
             {locale === "en" ?
                 <div style={videoWrapper}>
-                    <iframe style={iframeStyle} width="560" height="315" src="https://www.youtube.com/embed/Vlk-2hbRtHE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>
+                    <iframe style={iframeStyle} width="560" height="315" src="https://www.youtube.com/embed/Vlk-2hbRtHE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true} loading="eager"></iframe>
                 </div>
                 :
                 <div style={videoWrapper}>
-                    <iframe style={iframeStyle} width="560" height="315" src="https://www.youtube.com/embed/uimrlqWa7Z8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>
+                    <iframe style={iframeStyle} width="560" height="315" src="https://www.youtube.com/embed/uimrlqWa7Z8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true} loading="eager"></iframe>
                 </div>
             }
             <br />

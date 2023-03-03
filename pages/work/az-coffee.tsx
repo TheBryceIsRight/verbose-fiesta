@@ -66,6 +66,7 @@ export default function MagazineIllustrations() {
                 src={Coffee2}
                 alt="Coffee 3"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
@@ -74,6 +75,7 @@ export default function MagazineIllustrations() {
                 src={Coffee3}
                 alt="Coffee 4"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
@@ -82,6 +84,7 @@ export default function MagazineIllustrations() {
                 src={Coffee4}
                 alt="Coffee 5"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
@@ -90,6 +93,7 @@ export default function MagazineIllustrations() {
                 src={Coffee5}
                 alt="Coffee 6"
                 style={{borderRadius: 4}}
+                placeholder='blur'
             >
             </Image>
             <br />
