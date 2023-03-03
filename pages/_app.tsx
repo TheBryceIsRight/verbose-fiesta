@@ -6,6 +6,9 @@ import { PaletteMode } from '@mui/material';
 import { useState, useMemo, createContext, useContext } from 'react';
 import { AppPropsType } from 'next/dist/shared/lib/utils';
 import { LanguageProvider } from '../contexts/LanguageContext';
+import { Analytics } from '@vercel/analytics/react';
+import Meta from '../components/meta';
+
 
 export const ColorModeContext = createContext({
   toggleColorMode: () => { },
@@ -90,6 +93,8 @@ export default function App({ Component, pageProps, router }: AppPropsType) {
         <CssBaseline />
         <Header />
         <Component {...pageProps} key={router.route} />
+        <Analytics />
+        <Meta/>
       </ThemeProvider>
     </ColorModeContext.Provider>
   </LanguageProvider>
