@@ -114,7 +114,7 @@ export default function Index() {
                       Magazine Illustrations
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Illustrations for opinion editorials for Sant Jucat</Typography>
+                    <Typography variant='body1'>Illustrations for opinion editorials for Sant Cugat</Typography>
                   </div>
                 </ButtonBase>
               </Link>
