@@ -32,6 +32,19 @@ export const LangStrings = {
         animation: "Animation",
         animator: "Animator",
         illustrator: "Illustrator",
+        from_the_archive: "From the Archive",
+        lineart: "Lineart Illustrations",
+        internship: "Work from my illustration internship",
+        coffee: "Redefining brand guidelines for a coffee company",
+        zobeida_description: "Illustrations inspired by Las Ciudades Invisibles by Italo Calvino",
+        animated_video: "Developing animated promotional videos for SaaS healthcare startup",
+        patterns_description: "Patterns I worked on during my illustration internship",
+        pattern_designs: "Pattern Designs",
+        omonovo_title: "Omonovo animation",
+        magazine_title: "Magazine Illustrations",
+        magazine_description: "Illustrations for opinion editorials for Sant Cugat",
+
+
     },
     es: {
         hi: "¡Hola! Soy Sandra",
@@ -66,7 +79,18 @@ export const LangStrings = {
         animation: "Animación",
         animator: "Animadora",
         illustrator: "Ilustradora",
-
+        from_the_archive: "Del archivo",
+        lineart: "Ilustraciones lineales",
+        internship: "Trabajo de mi pasantía de ilustración",
+        coffee: "Redefinición de las pautas de marca para una empresa de café",
+        zobeida_description: "Ilustraciones inspiradas en Las Ciudades Invisibles de Italo Calvino",
+        animated_video: "Desarrollo de videos promocionales animados para startup de salud SaaS",
+        patterns_description: "Patrones en los que trabajé durante mi pasantía de ilustración",
+        pattern_designs: "Diseños de patrones",
+        omonovo_title: "Animación de Omonovo",
+        magazine_title: "Revista Ilustraciones",
+        magazine_description: "Ilustraciones para editoriales de opinión de Sant Cugat",
+        
     },
     ca: {
         hi: "Hola! Sóc la Sandra",
@@ -101,6 +125,17 @@ export const LangStrings = {
         animation: "Animació",
         animator: "Animador",
         illustrator: "Illustrador",
-
+        from_the_archive: "De l'arxiu",
+        lineart: "Illustracions Lineart",
+        internship: "Treball de les meves pràctiques d'il·lustració",
+        coffee: "Redefinició de les directrius de marca per a una empresa de cafè",
+        zobeida_description: "Illustracions inspirades en Las Ciudades Invisibles d'Italo Calvino",
+        animated_video: "Desenvolupament de vídeos promocionals animats per a l'inici de la sanitat SaaS",
+        patterns_description: "Patrons que vaig treballar durant les pràctiques d'il·lustració",
+        pattern_designs: "Dissenys de patrons",
+        omonovo_title: "Animació Omonovo",
+        magazine_title: "Il·lustracions de revistes",
+        magazine_description: "Il·lustracions per a editorials d'opinió de Sant Cugat",
+        
     },
 }

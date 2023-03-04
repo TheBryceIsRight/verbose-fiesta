@@ -93,7 +93,7 @@ export default function Index() {
           <br />
           <br />
           <MuiContainer style={{ textAlign: "left" }}>
-            <Typography variant='h3'>Previous Work</Typography>
+            <Typography variant='h3'>{t("previous_work")}</Typography>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
               <Link href="/work/magazine-illustrations" passHref>
@@ -111,10 +111,12 @@ export default function Index() {
                       </div>
                     </div>
                     <Typography variant='h4'>
-                      Magazine Illustrations
+                      {t("magazine_title")}
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Illustrations for opinion editorials for Sant Cugat</Typography>
+                    <Typography variant='body1'>
+                      {t("magazine_description")}
+                    </Typography>
                   </div>
                 </ButtonBase>
               </Link>
@@ -134,10 +136,10 @@ export default function Index() {
                       </div>
                     </div>
                     <Typography variant='h4'>
-                      Omonovo animation
+                      {t("omonovo_title")}
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Developing animated promotional videos for SaaS healthcare startup</Typography>
+                    <Typography variant='body1'>{t("animated_video")}</Typography>
                   </div>
                 </ButtonBase>
               </Link>
@@ -159,10 +161,10 @@ export default function Index() {
                       </div>
                     </div>
                     <Typography variant='h4'>
-                      Lineart Illustrations
+                      {t("lineart")}
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Work from my illustration internship</Typography>
+                    <Typography variant='body1'>{t("internship")}</Typography>
                   </div>
                 </ButtonBase>
               </Link>
@@ -184,14 +186,14 @@ export default function Index() {
                       AZ Coffee
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Redfefining brand guidelines for a coffee company</Typography>
+                    <Typography variant='body1'>{t("coffee")}</Typography>
                   </div>
                 </ButtonBase>
               </Link>
             </div>
           </MuiContainer>
           <MuiContainer style={{ textAlign: "left" }}>
-            <Typography variant='h3'>From the archive</Typography>
+            <Typography variant='h3'>{t("from_the_archive")}</Typography>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
               <Link href="/work/zobeida" passHref>
@@ -212,7 +214,7 @@ export default function Index() {
                       Zobeida
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Illustrations inspired by Las Ciudades Invisibles by Italo Calvino</Typography>
+                    <Typography variant='body1'>{t("zobeida_description")}</Typography>
                   </div>
                 </ButtonBase>
               </Link>
@@ -232,10 +234,10 @@ export default function Index() {
                       </div>
                     </div>
                     <Typography variant='h4'>
-                      Pattern Designs
+                      {t("pattern_designs")}
                     </Typography>
                     <br />
-                    <Typography variant='body1'>Patterns I worked on during my illustration internship</Typography>
+                    <Typography variant='body1'>{t("patterns_description")}</Typography>
                   </div>
                 </ButtonBase>
               </Link>
