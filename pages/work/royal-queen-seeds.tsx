@@ -8,6 +8,7 @@ import undraw_hero_light from '../../public/assets/royal-queen-seeds/RoyalQueenS
 import undraw_hero_dark from '../../public/assets/royal-queen-seeds/RoyalQueenSeedsUndrawDark.svg'
 import RoyalQueenSeedsLogoLight from '../../public/assets/royal-queen-seeds/RoyalQueenLogo-light.svg'
 import RoyalQueenSeedsLogoDark from '../../public/assets/royal-queen-seeds/RoyalQueenLogo-dark.svg'
+import Sundance from '../../public/assets/royal-queen-seeds/Sundance.png'
 import { useTheme } from '@mui/material/styles';
 import useTranslation from "../../intl/useTranslation"
 import EmblaCarousel from '../../components/emblaCarousel'
@@ -124,6 +125,18 @@ export default function RoyalQueenSeeds() {
             <Typography variant='h4'>{t("insomnia")}</Typography>
             <br />
             <EmblaCarousel slides={SLIDES_INSOMNIA} options={OPTIONS} type="insomnia" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Typography variant='h4'>{t("sundance")}</Typography>
+            <br />
+            <Image
+                    src={Sundance}
+                    alt="Sundance Festival"
+                    loading="eager"
+                    style={{borderRadius: 4}}
+                />
         </Container>
         <Container maxWidth="md">
             <br />

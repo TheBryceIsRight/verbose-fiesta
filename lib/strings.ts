@@ -43,7 +43,7 @@ export const LangStrings = {
         omonovo_title: "Omonovo animation",
         magazine_title: "Magazine Illustrations",
         magazine_description: "Illustrations for opinion editorials for Sant Cugat",
-
+        sundance: "Sundance Festival",
 
     },
     es: {
@@ -90,7 +90,8 @@ export const LangStrings = {
         omonovo_title: "Animación de Omonovo",
         magazine_title: "Revista Ilustraciones",
         magazine_description: "Ilustraciones para editoriales de opinión de Sant Cugat",
-        
+        sundance: "Festival de Sundance",
+
     },
     ca: {
         hi: "Hola! Sóc la Sandra",
@@ -136,6 +137,7 @@ export const LangStrings = {
         omonovo_title: "Animació Omonovo",
         magazine_title: "Il·lustracions de revistes",
         magazine_description: "Il·lustracions per a editorials d'opinió de Sant Cugat",
-        
+        sundance: "Festival de Sundance",
+
     },
 }
